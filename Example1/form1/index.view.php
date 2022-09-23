@@ -15,9 +15,9 @@
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
             <h1>CONTACTO</h1>
 
-            <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" value="">
-            <input type="text" class="form-control" id="email" name="email" placeholder="Correo electrónico" value="">
-            <textarea class="form-control form-control-msg" id="message" name="message" placeholder="Mensaje"></textarea>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" value="<?php if(!$enviado && isset($name)) echo $name ?>">
+            <input type="text" class="form-control" id="email" name="email" placeholder="Correo electrónico" value="<?php if(!$enviado && isset($email)) echo $email?>">
+            <textarea class="form-control form-control-msg" id="message" name="message" placeholder="Mensaje"><?php if(!$enviado && isset($message)) echo $message ?></textarea>
 
             <?php if(!empty($errores)): ?>
                 <div class="alert error">

@@ -30,6 +30,12 @@ if(isset($_POST['submit'])) {
     }
     
     if(!$errores){
+        $enviar_a = 'grupovianca@gmail.com';
+        $asunto = 'correo enviado desde www.form.com';
+        $mensaje = "Des $name \n";
+        $mensaje .= "Correo: $email \n";
+        $mensaje .= "Mensaje: ".$message;
+        mail($enviar_a, $asunto, $mensaje);
         $enviado = true;
     }
 }
