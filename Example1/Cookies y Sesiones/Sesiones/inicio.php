@@ -18,7 +18,7 @@ session_start();
     <title>Inicio</title>
 </head>
 <body>
-    <!-- <h1>Hola, <?php echo $_SESSION['nombre']; ?></h1> -->
+
     <a href="salir.php">Cerrar Sesion</a>
 </body>
 </html>
