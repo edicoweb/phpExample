@@ -1,5 +1,5 @@
 <?php
-    $id = $_GET['id'];
+    // $id = $_GET['id'];
 
     try {
         $conexion = new PDO('mysql:host=localhost; dbname=prueba_csl', 'root', '');
@@ -7,14 +7,17 @@
         // echo 'conexion ok';
 
         //PREPARED STATEMENTS
+        $statement = $conexion->prepare('SELECT * FROM usuario');
+        $statement->execute();
 
-        $statement = $conexion->prepare('SELECT * FROM usuario WHERE id = :id');
-        $statement->execute( array(':id' => $id) );
+        //iNSERTAR DATOS
+        // $statement = $conexion->prepare('INSERT INTO usuario VALUES(null, "Rosmery", "rosmery@gmail.com")');
+        // $statement->execute();
 
-        $resultado = $statement->fetch();
-        echo '<pre>';
-        print_r($resultado);
-        echo '</pre>';
+        $resultados = $statement->fetchAll();
+        foreach ($resultados as $usuario) {
+            echo $usuario['name'] . '<br>';
+        }
 
     } catch (PDOException $e) {
         echo "Error: " . $e->getMessage() . '<br>';
