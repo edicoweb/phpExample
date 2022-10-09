@@ -1,5 +1,5 @@
 <?php
-
+    //Coneción a DB
     try {
         $conexion = new PDO('mysql:host=localhost;dbname=blog_pagination', 'root', '');
     } catch (PDOException $e) {
@@ -8,7 +8,24 @@
     }
 
     $pagina = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
-    $postPorPagina = 4;
+    
+    $postPorPagina = 5;
 
+    $inicio = ($pagina > 1) ? ($pagina * $postPorPagina - $postPorPagina) : 0;
+
+    $articulos = $conexion->prepare("SELECT SQL_CALC_FOUND_ROWS * FROM articulos LIMIT $inicio, $postPorPagina");
+    $articulos->execute();
+    $articulos = $articulos->fetchAll();
+
+    //Si no encuentro la pagina redirecciona al index.php
+    if (!$articulos) {
+        header('Location: index.php');
+    }
+
+    $totalArticulos = $conexion->query("SELECT FOUND_ROWS() as total");
+    $totalArticulos = $totalArticulos->fetch()['total'];
+
+    $numeroPaginas = ceil($totalArticulos / $postPorPagina);
+    
     require 'index.view.php';
 ?>

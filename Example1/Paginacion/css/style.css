@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 
 *{
     margin: 0;
@@ -9,26 +10,25 @@
 }
 
 body{
-    background-color: #e9e9e9;
-    color: #2e2e2e;
-    font-family: 'Roboto', sans-serif;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container{
-    width: 90%;
-    max-width: 1000px;
+    position: relative;
+    width: 75%;
+    height: 65vh;
     margin: auto;
+    padding: 16px;
 }
 
 h1{
-    margin:  20px 0;
+    color: rgb(202, 99, 99);
     text-align: center;
-    color: #ce7f00;
-    font-weight:  bold;
-}
-
-.container .articulo{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-family: 'Silkscreen', cursive;
 }
 
 .container .articulo ul{
@@ -36,44 +36,39 @@ h1{
 }
 
 .container .articulo ul li{
-    padding: 15px 10px;
-    border-bottom: 1px solid #c8c8c8;
+    margin: 15px 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e7d7d7;
+    font-size: 18px;
+    color: black;
 }
 
+/* Estilo a la sección de Paginación */
 .paginacion ul{
+    position: absolute;
     list-style: none;
     display: flex;
-}
-
-.paginacion ul li{
-    margin: 0 2px;
-}
-
-a{
-    color: #e9e9e9;
-}
-
-.paginacion ul .active a{
-    background: #ce7f08;
-}
-
-.paginacion ul .disabled {
-    background-color: #c8c8c8;
-    display: inline-block;
-    padding: 10px 15px;
-    cursor: not-allowed;
-    color: #fff;
-    text-decoration: none;
+    bottom: 0;
+    margin-left: 25px;
+    margin-bottom: 16px;
 }
 
 .paginacion ul li a{
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #424242;
     text-decoration: none;
+    padding: 5px 15px;
+    border: 1px solid rgb(136, 211, 255);   
+    color: rgb(69, 99, 199);
+    background-color: rgb(255, 255, 255);
 }
 
-.paginacion ul li a:hover {
-    text-decoration: none;
-    background-color: #3299bb;
+.paginacion ul li .disabled{
+    cursor: not-allowed;
+    color: rgb(184, 179, 179);
+    border: 1px solid rgba(136, 211, 255, 0.61);
+}
+
+.paginacion ul .active a{
+    background-color: rgb(69, 99, 199);
+    border: 1px solid rgb(69, 99, 199);
+    color: white;
 }
