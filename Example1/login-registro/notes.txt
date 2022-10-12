@@ -1,0 +1,4 @@
+DB/notas
+nombre BD: 'db_registro'
+nombre tabla: 'persona'
+campos tabla: 'id, user, password' 
