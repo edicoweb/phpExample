@@ -27,6 +27,14 @@
                 <input type="password" name="password2" id="" class="input password-btn" placeholder="Repetir contraseña">
             </div>
 
+            <?php if(!empty($errores)): ?>
+                <div class="alert error">
+                    <ul>
+                    <?php echo $errores; ?>
+                    </ul>
+                </div>
+            <?php endif; ?>
+
             <div class="form-group">
                 <button class="btn primary-btn">Guardar</button>
             </div>
