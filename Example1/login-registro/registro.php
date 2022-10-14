@@ -15,7 +15,8 @@
     
         if (empty($user) or empty($password) or empty($password2)) {
             $errores .= '<li>Por favor ingrese todo sus datos correctamente</li>';
-        } else{
+        } 
+        else{
 
             try {
                 $conexion = new PDO('mysql:host=localhost; dbname=db_registro', 'root', '');
@@ -31,8 +32,19 @@
                 $errores .= '<li>El nombre de usuario ya existe</li>';
             }
 
-        }   
-    }
+            $password = hash('sha512', $password);
+            $password2 = hash('sha512', $password2);
 
+            if($password != $password2){
+                $errores .= '<li>Las contraseñas no coinciden</li>';
+            }
+        }
+        
+        if(empty($errores)){
+            $statement = $conexion->prepare('INSERT INTO persona (id, user, password) VALUES (null, :user, :password)');
+            $statement->execute(array(':user' => $user, ':password' => $password));
+            header('Location: login.php');
+        }
+    }
     require './view/registro.view.php';
 ?>

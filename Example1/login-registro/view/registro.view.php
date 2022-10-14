@@ -30,7 +30,7 @@
             <?php if(!empty($errores)): ?>
                 <div class="alert error">
                     <ul>
-                    <?php echo $errores; ?>
+                    <?php echo $errores ; ?>
                     </ul>
                 </div>
             <?php endif; ?>

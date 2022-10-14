@@ -23,9 +23,18 @@
                 <input type="password" name="password" id="" class="input password" placeholder="Contraseña">
             </div>
 
+            <?php if(!empty($errores)): ?>
+                <div class="alert error">
+                    <ul>
+                    <?php echo $errores ; ?>
+                    </ul>
+                </div>
+            <?php endif; ?>
+
             <div class="form-group">
                 <button class="btn primary-btn">Ingresar</button>
             </div>
+            
         </form>
         <p class="text-register">
             ¿ Aun no tienes cuenta ?
