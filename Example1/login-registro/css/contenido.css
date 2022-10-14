@@ -27,7 +27,7 @@ body{
 
 .logout-section{
     margin-bottom: 4px;
-    border-bottom: 8px solid rgb(224, 89, 89);
+    border-bottom: 8px solid rgb(131, 127, 165);
 }
 
 .container a{
@@ -40,7 +40,7 @@ body{
 }
 
 .container article{
-    background-color: burlywood;
+    background-color: rgb(224, 230, 241);
     padding: 24px;
 }
 
