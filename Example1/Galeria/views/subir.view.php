@@ -9,24 +9,28 @@
     <title>Galeria</title>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <div class="contenedor">
             <h1 class="titulo">Subir imagen</h1>
         </div>
-    </header>
+    </header> -->
 
     <main>
         <section class="fotos">
             <div class="content">
               <form class="formulario" enctype="multipart/form-data" action="<?php echo  htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
                 <label for="imagen">selecciona imagen:</label>
-                <input type="file" id="imagen" name="imagen">
+                <input type="file" id="imagen" name="imagen" class="inp-img">
 
                 <label for="titulo">Titulo:</label>
                 <input type="text" id="titulo" name="titulo" class="titulo" placeholder="Título">
 
-                <label for="texto">Descripción:</label>
-                <textarea id="texto" name="texto" placeholder="Ingrese una descripción"></textarea>
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" placeholder="Ingrese una descripción"></textarea>
+
+                <?php if(isset($error)): ?>
+                    <small class="error"><?php echo $error; ?></small>
+                <?php endif; ?>
 
                 <input type="submit" class="submit-form" value="Subir foto">
               </form> 
