@@ -9,12 +9,11 @@
     <title>Galeria</title>
 </head>
 <body>
-    <!-- <header>
+    <header>
         <div class="contenedor">
             <h1 class="titulo">Subir imagen</h1>
         </div>
-    </header> -->
-
+    </header>
     <main>
         <section class="fotos">
             <div class="content">
