@@ -11,16 +11,23 @@
 <body>
     <header>
         <div class="contenedor">
-            <h1 class="titulo">Lenovo AMD</h1>
+            <h1 class="titulo">
+                <?php 
+                    if (!empty($foto['titulo'])) {
+                        echo $foto['titulo'];
+                    } else {
+                        echo $foto['imagen'];
+                    }
+                ?>
+            </h1>
         </div>
     </header>
-
     <main>
         <section class="fotos">
             <div class="content">
-                <img src="assets/img-prueba/10.jpg" alt="">
-                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis repellat dolores ipsum, omnis amet quia sequi, dolorum modi voluptatum eveniet magni eligendi distinctio quibusdam ullam illo quo fugit ratione molestiae.</p>
-                <a href="index.php" class="regresar"><i class="fa fa-long-arrow-left"></i> Regresar</a>
+                    <img src="assets/img/<?php echo $foto['imagen']; ?>" alt="">
+                    <p class="texto"><?php echo $foto['descripcion'] ?></p>
+                    <a href="index.php" class="regresar"><i class="fa fa-long-arrow-left"></i> Regresar</a>
             </div>
         </section>
     </main>
