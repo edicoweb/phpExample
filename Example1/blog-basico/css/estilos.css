@@ -2,6 +2,9 @@
 
 :root{
     --primary-color: #25262a;
+    --secondary-color: rgb(226, 189, 21);
+    --green-color: rgb(0 143 92);
+    --green-color-hover: rgb(3, 122, 81);
     --primary-text-color: #ffff;
 }
 
@@ -16,11 +19,19 @@ body{
     background-color: var(--primary-color);
 }
 
-header .container{
+header {
     display: flex;
     height: 80px;
+    width: 100%;
+    justify-content: center;
+}
+
+header .container{
+    position: relative;
+    display: flex;
+    height: 80px;
+    width: 1300px;
     padding: 0 40px;
-    min-width: 320px;
     justify-content: space-between;
     align-items: center;
     /* background-color: #1a1a1b; */
@@ -41,15 +52,44 @@ header .container .menu a img{
 
 header .container .menu ul{
     display: flex;
-    margin-left: 30px;
+    margin-left: 20px;
     list-style: none;
 }
 
 header .container .menu ul li{
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 header .container .menu ul li a{
     text-decoration: none;
     color: var(--primary-text-color);
+}
+
+header .container .menu ul li a:hover{
+    color: var(--green-color);
+}
+
+header .container .contactame{
+    position: absolute;
+    margin-top: 10px;
+    margin-right: 40px;
+    top: 0;
+    right: 0;
+}
+
+header .container .contactame ul{
+    list-style: none;
+}
+
+header .container .contactame ul li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius:  0 0 15px 15px;
+    font-weight: bold;
+    color: var(--primary-color);
+    background-color: var(--green-color);
+}
+
+header .container .contactame ul li a:hover{
+    background-color: var(--green-color-hover);
 }
