@@ -3,8 +3,7 @@
 :root{
     --primary-color: #25262a;
     --secondary-color: rgb(226, 189, 21);
-    --green-color: rgb(0 143 92);
-    --green-color-hover: rgb(3, 122, 81);
+    --secondary-color-hover: rgb(247, 206, 27);
     --primary-text-color: #ffff;
 }
 
@@ -26,15 +25,17 @@ header {
     justify-content: center;
 }
 
+.secction{
+    width: 1300px;
+}
+
 header .container{
-    position: relative;
     display: flex;
     height: 80px;
-    width: 1300px;
     padding: 0 40px;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #1a1a1b; */
+    background-color: #1a1a1b;
 }
 
 header .container .menu{
@@ -66,15 +67,7 @@ header .container .menu ul li a{
 }
 
 header .container .menu ul li a:hover{
-    color: var(--green-color);
-}
-
-header .container .contactame{
-    position: absolute;
-    margin-top: 10px;
-    margin-right: 40px;
-    top: 0;
-    right: 0;
+    color: var(--secondary-color);
 }
 
 header .container .contactame ul{
@@ -83,13 +76,29 @@ header .container .contactame ul{
 
 header .container .contactame ul li a{
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius:  0 0 15px 15px;
+    padding: 8px 20px;
+    border-radius: 15px;
     font-weight: bold;
     color: var(--primary-color);
-    background-color: var(--green-color);
+    background-color: var(--secondary-color);
 }
 
 header .container .contactame ul li a:hover{
-    background-color: var(--green-color-hover);
+    background-color: var( --secondary-color-hover);
+}
+
+main {
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+}
+
+main .index-container{
+    display: flex;
+}
+
+
+.photo img{
+    width: 400px;
 }

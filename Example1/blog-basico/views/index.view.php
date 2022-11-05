@@ -9,8 +9,8 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="menu">
+        <div class="container secction">
+            <nav class="menu">
                 <a href="#"><img src="img/logo-e.png" alt=""></a>
                 <ul>
                     <li><a href="#">Inicio</a></li>
@@ -18,13 +18,29 @@
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
-            </div>
+            </nav>
             <div class="contactame">
                 <ul>
-                    <li><a href="">Contáctame</a></li>
+                    <li><a href="">Mi portafolio</a></li>
                 </ul>
             </div>
         </div>
     </header>
+    <main>
+        <section class="index-container secction">
+            <div class="index-container-text">
+                <div class="text">
+                    <h1>Hola! Soy edicoweb</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores vitae dolor eaque quia, voluptates nam nulla molestiae ullam ut quasi</p>
+                    <a href="">contáctame</a>
+                </div>
+            </div>
+            <div class="index-container-photo">
+                <div class="photo">
+                    <img src="img/photo.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
