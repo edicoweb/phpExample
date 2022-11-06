@@ -29,16 +29,13 @@
     <main>
         <section class="index-container secction">
             <div class="index-container-text">
-                <div class="text">
-                    <h1>Hola! Soy edicoweb</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores vitae dolor eaque quia, voluptates nam nulla molestiae ullam ut quasi</p>
-                    <a href="">contáctame</a>
-                </div>
+                    <h1>Hola!</h1>
+                    <h1>Soy edicoweb</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sunt saepe ex at architecto, sit soluta laborum, dolores modi eius commodi quae hic sapiente culpa, iusto ad vitae tempore porro?</p>
+                    <a class="primary-button" href="">Contáctame</a>
             </div>
             <div class="index-container-photo">
-                <div class="photo">
                     <img src="img/photo.png" alt="">
-                </div>
             </div>
         </section>
     </main>
