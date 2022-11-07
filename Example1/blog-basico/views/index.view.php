@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <div class="container secction">
+        <div class="container section">
             <nav class="menu">
                 <a href="#"><img src="img/logo-e.png" alt=""></a>
                 <ul>
@@ -27,7 +27,7 @@
         </div>
     </header>
     <main>
-        <section class="index-container secction">
+        <section class="index-container section">
             <div class="index-container-text">
                     <h1>Hola!</h1>
                     <h1>Soy edicoweb</h1>
@@ -36,6 +36,14 @@
             </div>
             <div class="index-container-photo">
                     <img src="img/photo.png" alt="">
+            </div>
+        </section>
+        <section class="msg-container">
+            <div class="msg-container-text section">
+                <h1>CREO EN LA CREATIVIDAD INNATA</h1>
+                <P>Me apaciona la comunicación intuitiva</P>
+                <p>Sé surfear en el océano de internet</p>
+                <h3>!Y ESTOY AQUI PARA AYUDARTE¡</h3>
             </div>
         </section>
     </main>
