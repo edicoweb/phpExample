@@ -72,11 +72,7 @@
                 <div class="qh-container-text">
                     <h1>¿Por qué contratarme para el próximo proyecto?</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore porro reprehenderit magnam esse at, cupiditate iste nobis minus quidem distinctio iusto possimus temporibus, error perspiciatis, consequatur magni. Excepturi, id voluptatum.</p>
-                    <div>
-                        <ul>
-                            <li><a href="">Mi portafolio</a></li>
-                        </ul>
-                    </div>
+                    <a class="primary-button" href="">Mi Portafolio</a>
                 </div>
 
 

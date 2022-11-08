@@ -169,9 +169,49 @@ main .index-container{
 }
 
 .qh-container{
-    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 60px auto;
+}
+
+.qh-container-skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 0 60px;
+}
+
+.qh-container-skills .skills-card{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: aqua;
+    padding: 16px;
+    height: 250px;
+    border-radius: 24px 0 24px 0;
+    background-color: var(--primary-color);
+}
+
+.qh-container-text{
+    display: flex;
+    flex-direction: column;
+    padding: 0 60px;
+    justify-content: center;
+}
+
+.qh-container-text h1{
+    color: var(--secondary-text-color);
+    margin-bottom: 12px;
+    font-size: 34px;
+}
+
+.qh-container-text p{
+    font-weight: 200;
+    margin-bottom: 32px;
+    font-size: var(--font-zise-primary);
+    color: var(--primary-text-color);
+}
+
+.qh-container-text a{
+    width: 145px;
+    text-decoration: none;
+    color: var(--primary-color);
 }
