@@ -63,8 +63,8 @@
                     </div>
                 </div>
                 <div class="qh-container-text">
-                    <h1>¿Por qué contratarme para el próximo proyecto?</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore porro reprehenderit magnam esse at, cupiditate iste nobis minus quidem distinctio iusto possimus temporibus, error perspiciatis, consequatur magni. Excepturi, id voluptatum.</p>
+                    <h1>Creamos soluciones tecnológicas a tu medida</h1>
+                    <p>Somos expertos en desarrollo de software y aplicaciones móviles. Déjanos asesorarte y caminemos juntos en tu proceso de transformación digital.</p>
                     <a class="primary-button" href="">Mi Portafolio</a>
                 </div>
             </div>
@@ -84,12 +84,31 @@
                         <span>
                         </span>
                         <img src="assets/img/post.png" alt="Lenovo">
-                        
                     </div>
             </div>
             <div class="pagination">
-                <a href="">Atras</a>
-                <a href="">Siguiente</a>
+                <a href=""> < </a>
+                <a href=""> > </a>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="form-container section">
+                <h1>¡Cuéntanos tu <span>idea</span>!</h1>
+                <form action="" method="post">
+                    <div>
+                        <label for="name">Nombre:
+                        <input type="text" name="name" id="name" class="name">
+                        </label>
+                        <label for="email">Correo:
+                        <input type="text" name="email" id="email" class="email">
+                        </label>
+                    </div>
+                    <label for="message">Mensaje:</label>
+                    <textarea name="message" id="message" class="message"></textarea>
+
+                    <button>Enviar</button>
+                </form>
             </div>
         </section>
 

@@ -45,6 +45,7 @@ header {
 
 .section{
     width: 1300px;
+    margin: auto;
 }
 
 header .container{
@@ -267,18 +268,20 @@ main .index-container{
 .blog-section{
     display: flex;
     flex-direction: column;
-    padding: 60px 40px;
+    padding: 40px 40px;
 }
 
 .blog-section a{
     color: var(--primary-text-color);
     text-decoration: none;
     font-weight: 200;
+    margin-bottom: 50px;
 }
 
 .blog-section .blog-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
 }
 
 .blog-container .blog-container-text{
@@ -324,4 +327,109 @@ main .index-container{
     position: absolute;
     width: 450px;
     border-radius: 15px;
+}
+
+.blog-section .pagination{
+    position: relative;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.blog-section .pagination a{
+    display: flex;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    background-color: var(--primary-color-b);
+    color: var(--primary-text-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-section .pagination a:nth-child(1){
+    left: 0;
+}
+
+.blog-section .pagination a:nth-child(2){
+    right: 0;
+}
+
+.form-section{
+    width: 100%;
+    height: auto;
+    background-color: var(--primary-color-b);
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px;
+    align-items: center;
+}
+
+.form-container h1{
+    margin-bottom: 22px;
+    color: var(--primary-text-color);
+}
+
+.form-container h1 span{
+    color: var(--secondary-text-color);
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-container form label{
+    margin-bottom: 8px;
+    font-size: var(--font-zise-primary);
+    color: var(--primary-text-color);
+}
+
+.form-container form div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-container form div input{
+    height: 50px;
+    width: 100%;
+    margin: 16px 0;
+    padding: 20px;
+    border-radius: 16px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: var(--font-zise-primary);
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+}
+
+.form-container form textarea{
+    height: 150px;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 26px;
+    padding: 20px;
+    border-radius: 16px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: var(--font-zise-primary);
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    /* overflow: scroll; */
+    resize: none;
+}
+
+.form-container form textarea:focus, input[type]:focus, .form-container form input:focus, input[type]:focus{
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(0, 0, 0, 0.6);
+    outline: 0 none;
 }
