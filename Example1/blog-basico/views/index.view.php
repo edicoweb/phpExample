@@ -1,37 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
-    <script src="https://kit.fontawesome.com/fe8f1122cf.js" crossorigin="anonymous"></script>
-    <title>Document</title>
-</head>
+<?php require 'head.php'; ?>
 <body>
-    <header>
-        <div class="container section">
-            <nav class="menu">
-                <a href="#"><img src="img/logo-e.png" alt=""></a>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Que hago?</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-            <div class="contactame">
-                <ul>
-                    <li><a href="">Mi portafolio</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+    <?php require 'header.view.php'; ?>
     <main>
         <section class="index-container section">
             <div class="index-container-text">
                     <h1>Hola!</h1>
-                    <h1>Soy edicoweb</h1>
+                    <h1>Soy usuario</h1>
                     <p>Me apaciona la comunicación intuitiva, Creo en la creatividad innata y Sé surfear en el océano de internet
                     <span>!Estoy aquí para ayudarte¡</span>
                     </p>
@@ -42,7 +18,7 @@
             </div>
         </section>
 
-        <section class="qh-section">
+        <section class="qh-section" id="que-hago">
             <div class="qh-container section">
                 <div class="qh-container-skills">
                     <div class="skills-card">
@@ -69,8 +45,7 @@
                 </div>
             </div>
         </section>
-
-        <section class="blog-section section">
+        <section class="blog-section section" id="blog">
             <a href="">Ver mas posts <i class="fa-solid fa-arrow-right"></i></i></a>
             <div class="blog-container">          
                     <div class="blog-container-text">
@@ -92,7 +67,7 @@
             </div>
         </section>
 
-        <section class="form-section">
+        <section class="form-section" id="contact">   
             <div class="form-container section">
                 <h1>¡Cuéntanos tu <span>idea</span>!</h1>
                 <form action="" method="post">
@@ -106,12 +81,12 @@
                     </div>
                     <label for="message">Mensaje:</label>
                     <textarea name="message" id="message" class="message"></textarea>
-
-                    <button>Enviar</button>
+                    <button class="primary-button">Enviar</button>
                 </form>
             </div>
         </section>
-
     </main>
+
+<?php require 'footer.view.php'; ?>
 </body>
 </html>

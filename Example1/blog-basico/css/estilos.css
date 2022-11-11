@@ -41,10 +41,11 @@ header {
     width: 100%;
     justify-content: center;
     background-color: var(--primary-color);
+    z-index: 10;
 }
 
 .section{
-    width: 1300px;
+    width: 1200px;
     margin: auto;
 }
 
@@ -260,12 +261,16 @@ main .index-container{
 }
 
 .qh-container-text a{
+    display: flex;
     width: 200px;
     text-decoration: none;
     color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
 }
 
 .blog-section{
+    position: relative;
     display: flex;
     flex-direction: column;
     padding: 40px 40px;
@@ -384,6 +389,7 @@ main .index-container{
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: center;
 }
 
 .form-container form label{
@@ -395,6 +401,7 @@ main .index-container{
 .form-container form div{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 100%;
     gap: 20px;
 }
 
@@ -432,4 +439,30 @@ main .index-container{
 .form-container form textarea:focus, input[type]:focus, .form-container form input:focus, input[type]:focus{
     box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(0, 0, 0, 0.6);
     outline: 0 none;
+}
+
+.form-container form button{
+    border: none;
+    width: 200px;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-zise-primary);
+    cursor: pointer;
+}
+
+footer{
+    height: 80px;
+    width: 100%;
+}
+
+.footer-section{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-section p{
+    color: var(--primary-text-color);
+    font-weight: 200;
 }
