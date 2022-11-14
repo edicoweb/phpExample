@@ -108,6 +108,7 @@ header .container .contactame ul li a:hover{
 }
 
 main {
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -117,7 +118,7 @@ main {
 }
 
 main .index-container{
-    margin-top: 60px;
+    /* margin-top: 60px; */
     display: grid;
     height: 590px;
     padding: 0 20px;
@@ -465,4 +466,21 @@ footer{
 .footer-section p{
     color: var(--primary-text-color);
     font-weight: 200;
+}
+
+/* ************************* */
+
+.main-blog{
+    padding-top: 60px;
+}
+
+.main-blog .blog-section .blog-container .blog-container-img img{
+    position: relative;
+    width: 350px;
+}
+
+.main-blog .blog-section{
+    margin-top: 40px;
+    padding: 20px 40px;
+    border-bottom: 1px solid var(--primary-color-b);
 }
