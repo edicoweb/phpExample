@@ -4,6 +4,12 @@
 <body>
     <?php require 'header.view.php'; ?>
     <main class="main-blog">
+
+        <form name="search" class="search section" action="<?php echo RUTA; ?>/buscar.php" method="GET">
+            <input type="text" name="search" placeholder="Buscar">
+            <button type="submit" class="icon fa fa-search"></button>
+        </form>
+
         <section class="blog-section section" id="blog">
             <div class="blog-container">
                 <div class="blog-container-img">

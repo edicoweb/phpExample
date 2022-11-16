@@ -471,7 +471,38 @@ footer{
 /* ************************* */
 
 .main-blog{
-    padding-top: 60px;
+    padding-top: 100px;
+}
+
+.main-blog .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-blog .search input{
+    height: 50px;
+    width: 80%;
+    margin: 16px 0;
+    padding: 20px;
+    border-radius: 16px;
+    border: 2px solid var(--primary-color-b);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: var(--font-zise-primary);
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+}
+
+.main-blog .search button{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    border-radius: 25px;
+    border: none;
+    color: var(--primary-text-color);
+    background-color: var(--primary-color-b);
+    cursor: pointer;
 }
 
 .main-blog .blog-section .blog-container .blog-container-img img{

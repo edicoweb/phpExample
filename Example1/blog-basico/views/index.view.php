@@ -46,7 +46,7 @@
             </div>
         </section>
         <section class="blog-section section" id="blog">
-            <a href="">Ver mas posts <i class="fa-solid fa-arrow-right"></i></i></a>
+            <a href="<?php echo "blog.php"; ?>">Ver mas posts <i class="fa-solid fa-arrow-right"></i></i></a>
             <div class="blog-container">          
                     <div class="blog-container-text">
                         <h1>Lenovo Tech World</h1>
