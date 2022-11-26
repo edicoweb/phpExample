@@ -1,7 +1,7 @@
 <header>
     <div class="container section">
         <nav class="menu">
-            <a href="#"><img src="img/logo-e.png" alt=""></a>
+            <a href="<?php echo 'index.php'; ?>"><img src="img/logo-e.png" alt=""></a>
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#que-hago">Que hago?</a></li>
