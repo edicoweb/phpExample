@@ -8,8 +8,8 @@ $bd_config = array(
 );
 
 $blog_config = array(
-    'post_por_pagina' => '3',
-    'carpeta_imagenes' => 'img/'
+    'post_por_pagina' => '2',
+    'carpeta_imagenes' => 'assets/img/'
 );
 
 $blog_admi = array(
