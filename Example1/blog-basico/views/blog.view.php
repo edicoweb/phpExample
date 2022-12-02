@@ -19,7 +19,7 @@
                     <h1><a href="post.php?id=<?php echo $post['id'] ?>"><?php echo $post['titulo'] ?></a></h1>
                     <p>
                         <?php echo $post['estracto'] ?>
-                        <a href=""><i class="fa-solid fa-arrow-right"></i></i> Seguir leendo</a>
+                        <a href="">Seguir leendo</a>
                     </p>
                 </div>
             </div>

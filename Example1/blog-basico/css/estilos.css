@@ -598,3 +598,12 @@ footer{
     width: 500px;
     border-radius: 20px;
 }
+
+
+.error h1{
+    color: var(--secondary-text-color);
+}
+
+.error p{
+    color: var(--primary-text-color);
+}

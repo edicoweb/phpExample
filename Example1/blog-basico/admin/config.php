@@ -9,6 +9,7 @@ $bd_config = array(
 
 $blog_config = array(
     'post_por_pagina' => '2',
+    'post_por_pagina_index' => '1',
     'carpeta_imagenes' => 'assets/img/'
 );
 
@@ -16,4 +17,5 @@ $blog_admi = array(
     'usuario' => 'edilberto',
     'password' => '123'
 );
+
 ?>

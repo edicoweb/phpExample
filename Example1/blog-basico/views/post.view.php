@@ -7,21 +7,15 @@
         
         <section class="post-section section" id="blog">
             <div class="post-title">
-                <h1>Lenovo Tech World</h1>
-                <small>Publicado el 11 - 11 - 2022</small>
+                <h1><?php echo $post['titulo'] ?></h1>
+                <small>Publicado en <?php echo fecha($post['fecha']) ?></small>
             </div>
             <div class="post-container">      
                 <div class="post-container-text">
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis nulla consequuntur ex sunt quas voluptatem eligendi assumenda totam distinctio labore nesciunt, nemo voluptatibus dolores cum a commodi repellendus nihil esse.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima id, nobis soluta excepturi odio earum expedita at esse nostrum nam. Repellat recusandae accusamus est nobis voluptatibus. Incidunt unde minima tempora.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima id, nobis soluta excepturi odio earum expedita at esse nostrum nam. Repellat recusandae accusamus est nobis voluptatibus. Incidunt unde minima tempora.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima id, nobis soluta excepturi odio earum expedita at esse nostrum nam. Repellat recusandae accusamus est nobis voluptatibus. Incidunt unde minima tempora.
-
-                    </p>
+                    <p><?php echo $post['texto'] ?></p>
                 </div>
                 <div class="post-container-img">
-                    <img src="assets/img/post.png" alt="Lenovo">
+                    <img src="assets/img/<?php echo $post['imagen'] ?>" alt="Lenovo">
                 </div>  
             </div>
         </section>
