@@ -50,7 +50,7 @@
             <?php foreach ($posts as $post): ?>
             <div class="blog-container">          
                     <div class="blog-container-text">
-                        <h1><a href="<?php echo "post.php"; ?>"><?php echo $post['titulo'] ?></a></h1>
+                        <h1><a href="post.php?id=<?php echo $post['id']?>"><?php echo $post['titulo'] ?></a></h1>
                         <p>
                             <?php echo $post['estracto'] ?>
                             <a href="<?php echo $post['id'] ?>"><i class="fa-solid fa-arrow-right"></i></i> Seguir leendo</a>

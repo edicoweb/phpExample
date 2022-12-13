@@ -9,8 +9,7 @@
             <input type="text" name="busqueda" placeholder="Buscar">
             <button type="submit" class="icon fa fa-search"></button>
         </form>
-        
-        <?php foreach ($posts as $post): ?>
+        <?php foreach ($resultados as $post): ?>
         <section class="blog-section section" id="blog">
             <div class="blog-container">
                 <div class="blog-container-img">
