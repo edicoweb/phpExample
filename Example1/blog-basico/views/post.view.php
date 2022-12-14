@@ -12,7 +12,7 @@
             </div>
             <div class="post-container">      
                 <div class="post-container-text">
-                    <p><?php echo $post['texto'] ?></p>
+                    <p><?php echo nl2br($post['texto']); ?></p>
                 </div>
                 <div class="post-container-img">
                     <img src="assets/img/<?php echo $post['imagen'] ?>" alt="Lenovo">
