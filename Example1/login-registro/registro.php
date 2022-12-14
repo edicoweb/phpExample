@@ -7,7 +7,7 @@
     }
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $user = filter_var(strtolower($_POST['user']), FILTER_SANITIZE_STRING);
+        $user = filter_var(strtolower($_POST['user']), FILTER_UNSAFE_RAW);
         $password = $_POST['password'];
         $password2 = $_POST['password2'];
 
