@@ -8,7 +8,7 @@ $bd_config = array(
 );
 
 $blog_config = array(
-    'post_por_pagina' => '3',
+    'post_por_pagina' => '4',
     'post_por_pagina_index' => '1',
     'carpeta_imagenes' => 'assets/img/'
 );

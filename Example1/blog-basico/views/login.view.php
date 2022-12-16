@@ -9,11 +9,11 @@
                 <h1>Iniciar Sesión</h1>
 
                 <div class="form-group">
-                    <input type="text" name="user" id="" class="input usuario" placeholder="Usuario">
+                    <input type="text" name="user" class="input usuario" placeholder="Usuario">
                 </div>
 
                 <div class="form-group">
-                    <input type="password" name="password" id="" class="input password" placeholder="Contraseña">
+                    <input type="password" name="password" class="input password" placeholder="Contraseña">
                 </div>
 
                 <div class="form-group">

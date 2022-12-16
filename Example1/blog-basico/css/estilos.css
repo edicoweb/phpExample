@@ -504,7 +504,7 @@ footer{
 .main-blog .search button{
     width: 50px;
     height: 50px;
-    margin-left: 20px;
+    margin-left: 5px;
     border-radius: 25px;
     border: none;
     color: var(--primary-text-color);
@@ -674,4 +674,69 @@ footer{
 .container-login p a{
     margin-left: 10px;
     color: var(--secondary-text-color);
+}
+
+/*********************INDEX ADMIN********************/
+
+.search-admin{
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-admin .search-cont input{
+    width: 500px;
+}
+
+form .add-button{
+    display: grid;
+    width: 150px;
+    height: 45px;
+    margin-right: 20px;
+    border-radius: 15px;
+    border: none;
+    color: var(--primary-text-color);
+    background-color: #48b37d;
+    cursor: pointer;
+    place-content: center;
+    text-decoration: none;
+}
+
+form .add-button:hover{
+    background-color: #3c9b6b;
+}
+
+.blog-section-admin{
+    padding: 5px 0 5px 0;
+    border-top: solid 1px rgba(95, 94, 94, 0.534);
+    border-bottom: solid 1px rgba(95, 94, 94, 0.534);
+    padding: 5px 10px 5px 10px;
+    background-color: var(--primary-color);
+}
+
+.blog-section-admin:hover{
+    background-color: var(--primary-color-b);
+}
+
+.blog-container-admin{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-section-admin .blog-container-text h1 a{
+    font-size: var(--font-zise-primary);
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+.blog-section-admin .blog-container-icon a:nth-child(1){
+    color: #adadad;
+}
+
+.blog-section-admin .blog-container-icon a:nth-child(2){
+    color: rgb(138, 86, 86);
 }
