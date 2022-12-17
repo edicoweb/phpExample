@@ -52,7 +52,7 @@ header {
 header .container{
     display: flex;
     height: 80px;
-    padding: 0 40px;
+    padding: 0 25px;
     justify-content: space-between;
     align-items: center;
 }
@@ -690,10 +690,24 @@ footer{
     width: 500px;
 }
 
+header .container .logout-button ul li a {
+    text-decoration: none;
+    padding: 7px 10px;
+    border-radius: 15px;
+    font-weight: 300;
+    color: var(--primary-text-color);
+    background-color: var(--primary-color);
+    border: solid 1px #dd3a3a;
+}
+
+header .container .logout-button ul li a:hover{
+    background-color: #c43535;
+}
+
 form .add-button{
     display: grid;
-    width: 150px;
-    height: 45px;
+    width: 155px;
+    height: 42px;
     margin-right: 20px;
     border-radius: 15px;
     border: none;
