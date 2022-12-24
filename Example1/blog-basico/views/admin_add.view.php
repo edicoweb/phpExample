@@ -5,7 +5,7 @@
 <body>
     <main class="main-blog">
         <div class="container container-add">
-            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post" class="form" name="login">
+            <form enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post" class="form">
                 <h1>Agregar Articulo</h1>
                 <hr>
 
