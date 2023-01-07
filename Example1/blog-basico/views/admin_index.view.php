@@ -22,7 +22,7 @@
                     <h1><a href="../post.php?id=<?php echo $post['id'] ?>"><?php echo $post['id'] . " . " . $post['titulo'] ?></a></h1>
                 </div>
                 <div class="blog-container-icon">
-                    <a href="editar.php?id=<?php echo $post['id']; ?>"><i class="fas fa-edit"></i></a>
+                    <a href="edit.php?id=<?php echo $post['id']; ?>"><i class="fas fa-edit"></i></a>
                     <a href="delete.php?id=<?php echo $post['id']; ?>"><i class="fa fa-trash" aria-hidden="true"></i></a>
                 </div>
             </div>
