@@ -10,24 +10,24 @@
                 <hr>
 
                 <div class="form-group">
-                    <input type="hidden" value="" name="id">
+                    <input type="hidden" name="id" value="<?php echo $post['id'] ?>">
                 </div>
 
                 <div class="form-group">
-                    <input type="text" name="titulo" class="input" placeholder="Título">
+                    <input type="text" name="titulo" class="input" value="<?php echo $post['titulo'] ?>">
                 </div>
 
                 <div class="form-group">
-                    <input type="text" name="estracto" class="input" placeholder="Extracto">
+                    <input type="text" name="estracto" class="input" value="<?php echo $post['estracto'] ?>">
                 </div>
 
                 <div class="form-group">
-                    <textarea name="texto" placeholder="Texto" cols="30" rows="10"></textarea>
+                    <textarea name="texto" cols="30" rows="10"> <?php echo $post['texto'] ?> </textarea>
                 </div>
 
                 <div class="form-group">
-                    <input type="file" name="imagen" class="input-file" placeholder="Texto">
-                    <input type="hidden" name="imagen_guardada" value="">
+                    <input type="file" name="imagen" class="input-file">
+                    <input type="hidden" name="imagen_guardada" value="<?php echo $post['imagen'] ?>">
                 </div>
 
                 <div class="form-group button-add">
