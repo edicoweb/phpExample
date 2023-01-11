@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         ':imagen' => $_FILES['imagen']['name']
     ));
 
-    // header('Location: ' . RUTA . '/admin');
+    header('Location: ' . RUTA . '/admin');
 }
 
 require '../views/admin_add.view.php';
