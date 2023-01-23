@@ -37,10 +37,15 @@ header {
     display: flex;
     position: fixed;
     top: 0;
-    height: 80px;
+    height: 70px;
     width: 100%;
-    background: var(--bg-color);
+    /* background: var(--bg-color); */
     z-index: 100;
+}
+
+header.shadow {
+    background-color: var(--bg-color);
+    box-shadow: 1px 4px 8px rgb(15 54 55 / 10%);
 }
 
 .nav {
@@ -273,8 +278,8 @@ header {
 }
 
 .newsletter-text h2 {
-    font-size: 1.4rem;
-    font-weight: 400;
+    font-size: 1.2rem;
+    font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
@@ -304,4 +309,76 @@ header {
     color: var(--bg-color);
     background: var(--main-color);
     cursor: pointer;
+}
+
+.newsletter-content form .btn:hover {
+    background: var(--hover-color);
+    transition: 0.3s all linear;
+}
+
+/* Footer */
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1rem;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-box h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-box a {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.footer-box a:hover {
+    color: var(--main-color);
+}
+
+.footer-box p {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.footer-box p:hover {
+    color: var(--main-color);
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.social .bx {
+    padding: 8px;
+    background-color: var(--main-color);
+    font-size: 20px;
+    border-radius: 0.5rem;
+    color: var(--bg-color);
+}
+
+.social .bx:hover {
+    background-color: var(--hover-color);
+    transition: 0.3s all linear;
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    padding: 20px;
+    background: var(--text-color);
+    color: var(--bg-color);
 }
