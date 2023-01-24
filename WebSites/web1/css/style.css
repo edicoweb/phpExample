@@ -340,6 +340,7 @@ header.shadow {
 .footer-box a {
     color: var(--text-color);
     margin-bottom: 0.5rem;
+    font-size: 0.8rem;
 }
 
 .footer-box a:hover {
@@ -350,6 +351,7 @@ header.shadow {
     color: var(--text-color);
     margin-bottom: 0.5rem;
     cursor: pointer;
+    font-size: 0.8rem;
 }
 
 .footer-box p:hover {
