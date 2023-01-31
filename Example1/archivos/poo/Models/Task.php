@@ -10,6 +10,17 @@ class Task {
         $this->title = $title;
         $this->completed = $completed;
     }
+
+    public function buildString(){
+        return "Title: {$this->title} \n" .
+                "Completed: " . ($this->completed ? "Si" : "No");
+    }
+
+    public function save($name){
+        $file = fopen($name, 'w');
+        fwrite($file, $this->buildString());
+        fclose($file);
+    }
     
 }
 
@@ -21,3 +32,7 @@ class Task {
     }
 }
 **/
+
+$task = new Task("Ir al supermercado", true);
+$task->save("task-1.txt");
+

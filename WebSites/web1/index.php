@@ -14,17 +14,14 @@
         <div class="nav container">
             <!-- Logo -->
             <a href="#" class="logo">
-                <img src="./assets/img/logo-e.svg" alt="">
             </a>
             <!-- Nav Icon -->
             <div class="menu-icon">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+                <i class='bx bx-menu'></i>
             </div>
             <!-- Nav Lista -->
             <ul class="navbar">
-                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#home">Inicio</a></li>
                 <li><a href="#services">Servicios</a></li>
                 <li><a href="#about">Nosotros</a></li>
                 <li><a href="#blog">Blog</a></li>
@@ -33,19 +30,17 @@
     </header>
 
     <!-- Home Section -->
-    <section class="home container" id="home">
-        <div class="home-text">
-            <h1><span>Creamos brillantes</span><br>soluciones tecnológicas</h1>
-            <p>Déjanos asesorarte y caminemos juntos en tu proceso de transformación digital.</p>
-            <a href="#" class="btn" id="services">Contáctenos</a>
-        </div>
-        <div class="home-img">
-            <img src="assets/img/portada.png" alt="">
+    <section class="home-container" id="home">
+        <div class=" home container">
+            <div class="home-text">
+                <h1><span>Creamos brillantes</span> soluciones tecnológicas</h1>
+                <p>Déjanos asesorarte y caminemos juntos en tu proceso de transformación digital.</p>
+            </div>
         </div>
     </section>
 
     <!-- Services section -->
-    <section class="services container" >
+    <section class="services container" id="services">
         <div class="heading">
             <p>Nuestros Servicios</p>
             <span></span>
@@ -128,10 +123,10 @@
         </div>
         <div class="footer-box footer-info">
             <h3>Contáctanos:</h3>
-            <p>Teléfono: 987432961</p>
-            <p>Email: grupovianca@gmail.com</p>
-            <p>Ciudad: Lima, Perú</p>
-            <p>Dirección: Av. Virreyes S/N</p>
+            <p>+51 987432961</p>
+            <p>grupovianca@gmail.com</p>
+            <p>Lima, Perú</p>
+            <p>Av. Virreyes S/N</p>
         </div>
 
         <div class="footer-box footer-social">
