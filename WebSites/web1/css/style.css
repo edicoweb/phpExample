@@ -13,7 +13,7 @@
 
 :root {
     --main-color: #0c7fb7;
-    --light-colo: #e1b955;
+    --light-color: rgb(255, 198, 42);
     --text-color: #2e2e2e;
     --hover-color: #0c7ab1;
     --bg-color: #fff;
@@ -96,7 +96,7 @@ header.shadow {
     top: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(255, 255, 255, 0.801);
+    background: rgba(255, 255, 255, 0.856);
     backdrop-filter: blur(4.5);
     z-index: 106;
     display: none;
@@ -139,8 +139,9 @@ header.shadow {
 .home-text h1 {
     font-size: 1.6rem;
     font-weight: 500;
-    color: #d8ce70;
+    color: var(--light-color);
     text-align: center;
+    margin-top: 2rem;
 }
 
 .home-text h1 span {
@@ -152,6 +153,84 @@ header.shadow {
     color: var(--bg-color);
     text-align: center;
 }
+
+/* Home - glowing animation */
+.glowing {
+    position: absolute;
+    display: flex;
+    width: 500px;
+    height: 100%;
+    top: 0;
+    left: 400px;
+    margin: -150px;
+    transform-origin: right;
+}
+
+.glowing span {
+    position: absolute;
+    top: calc(80px * var(--i));
+    left: calc(80px * var(--i));
+    bottom: calc(80px * var(--i));
+    right: calc(80px * var(--i));
+}
+
+.glowing span:before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -180px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.glowing span:nth-child(3n + 1):before {
+    background: rgba(64, 119, 151, 0.068);
+}
+
+.glowing span:nth-child(3n + 2):before {
+    background: rgba(62, 81, 112, 0.178);
+}
+
+.glowing span:nth-child(3n + 3):before {
+    background: rgba(204, 228, 213, 0.027);
+}
+
+.glowing span:nth-child(3n + 1) {
+    animation: animate 10s alternate infinite;
+} @keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.glowing span:nth-child(3n + 2) {
+    animation: animate-reverse 7s alternate infinite;
+} @keyframes animate-reverse {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.glowing span:nth-child(3n + 3) {
+    animation: animate-three 4s alternate infinite;
+} @keyframes animate-three {
+    0%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+
+
 /* Services */
 
 .services {

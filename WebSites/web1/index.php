@@ -36,9 +36,13 @@
                 <h1><span>Creamos brillantes</span> soluciones tecnológicas</h1>
                 <p>Déjanos asesorarte y caminemos juntos en tu proceso de transformación digital.</p>
             </div>
+            <div class="glowing">
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+            </div>           
         </div>
     </section>
-
     <!-- Services section -->
     <section class="services container" id="services">
         <div class="heading">
@@ -95,6 +99,13 @@
             <p>
             Somos expertos en desarrollo de software, marketing digital y diseño creativo. Déjanos asesorarte y caminemos juntos en tu proceso de transformación digital.<br>
             </p>
+        </div>
+    </section>
+
+    <!-- why-us -->
+    <section class="why-us">
+        <div class="why-us_text container">
+            <h2>¿Qué nos hace diferente?</h2>
         </div>
     </section>
 
