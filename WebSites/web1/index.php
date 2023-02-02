@@ -33,7 +33,7 @@
     <section class="home-container" id="home">
         <div class=" home container">
             <div class="home-text">
-                <h1><span>Creamos brillantes</span> soluciones tecnológicas</h1>
+                <h1>Creamos soluciones <span> tecnológicas </span> a tu medida</h1>
                 <p>Déjanos asesorarte y caminemos juntos en tu proceso de transformación digital.</p>
             </div>
             <div class="glowing">
@@ -51,41 +51,63 @@
         </div>
         <div class="services-content">
             <!-- Box-1 -->
-            <a href="" class="box box-1">
+            <div href="" class="box box-1">
                 <img src="assets/icon/squares-toys.svg" alt="">
                 <div class="box-text">
                     <div class="title-services">
-                        <p>Software a Medida</p>
+                        <p>Desarrollo Web</p>
                     </div>
+                    <p class="text-services">Desarrollamos activos digitales alineados a tu estrategia y orientados a tus objetivos.</p>
+                    <p class="item-services">
+                        <p>Desarrollo Web</p>
+                        <p>Diseño Web</p>
+                        <p>Landing Pages</p>
+                        <p>eCommerce</p>
+                    </p>
                 </div>
-            </a>
+                <span></span>
+            </div>
             <!-- Box-2 -->
-            <a href="" class="box box-2">
+            <div href="" class="box box-2">
                 <img src="assets/icon/marketing.svg" alt="">
                 <div class="box-text">
                     <div class="title-services">
-                        <p>Estrategias de Marketing Digital</p>
+                        <p>Marketing Digital</p>
                     </div>
+                    <p class="text-services">Te ayudamos a alcanzar tus objetivos a través de la optimización de tus canales digitales.</p>
+                    <p class="item-services">
+                        <p>Inbound Marketing</p>
+                        <p>Social Media</p>
+                        <p>Content Marketing</p>
+                        <p>SEO</p>
+                    </p>
                 </div>
-            </a>
+            </div>
             <!-- Box-3 -->
-            <a href="" class="box box-3">
+            <div href="" class="box box-3">
                 <img src="assets/icon/palette-color.svg" alt="">
                 <div class="box-text">
                     <div class="title-services">
-                        <p>Diseño y Creatividad Publicitaria</p>
+                        <p>Content Lab</p>
+                    </div>
+                    <p class="text-services">Creamos contenidos impactantes para tu marca con el objetivo de conectar con tu audiencia.</p>
+                    <div class="item-services">
+                        <p>Diseño Gráfico</p>
+                        <p>Redacción SEO</p>
+                        <p>Video</p>
+                        <p>Fotografía Publicitaria</p>
                     </div>
                 </div>
-            </a>
+            </div>
             <!-- Box-4 -->
-            <a href="" class="box box-4">
+            <!-- <a href="" class="box box-4">
                 <img src="assets/icon/rocket.svg" alt="">
                 <div class="box-text">
                     <div class="title-services">
                         <p>Posicionamiento Web SEO</p>
                     </div>
                 </div>
-            </a>
+            </a> -->
         </div>
     </section>
 
@@ -97,15 +119,37 @@
         <div class="about-text">
             <h2>¿Quiénes Somos?</h2>
             <p>
-            Somos expertos en desarrollo de software, marketing digital y diseño creativo. Déjanos asesorarte y caminemos juntos en tu proceso de transformación digital.<br>
+            Somos expertos en desarrollo de software, marketing digital y diseño creativo. 
+            Déjanos asesorarte y caminemos juntos en tu proceso de transformación digital.<br>
             </p>
         </div>
     </section>
 
     <!-- why-us -->
     <section class="why-us">
-        <div class="why-us_text container">
-            <h2>¿Qué nos hace diferente?</h2>
+        <div class="why-us_text container heading">
+            <p>¿Qué nos hace diferente?</p>
+            <span></span>
+        </div>
+        <div class="why-us_cards container">
+            <div class="why-us_card">
+                <span></span>
+                <h2>Servicios Eficientes</h2>
+                <p>Trabajamos de la mano con nuestros clientes, siendo parte de su equipo y 
+                    conociendo sus necesidades reales, desarrollando relaciones de largo plazo.</p>
+            </div>
+            <div class="why-us_card">
+                <span></span>
+                <h2>Ágiles y Flexibles</h2>
+                <p>Trabajamos bajo las prácticas de metodologías ágiles nos hace ser un equipo organizado,
+                    exigente y siempre en constante feedback con nuestros clientes.</p>
+            </div>
+            <div class="why-us_card">
+                <span></span>
+                <h2>Experiencia</h2>
+                <p>Nuestro años de experiencia desarrollando soluciones  y
+                    nuestro equipo de excelencia nos han hecho EXPERTOS en lo que hacemos.</p>
+            </div>
         </div>
     </section>
 
@@ -113,13 +157,10 @@
     <section class="newsletter">
         <div class="newsletter-content container">
             <div class="newsletter-text">
-                <h2>Dejenos tu whatsapp</h2>
-                <p>Nosotros nos contactamos contigo.</p>
+                <h2>¿Tu marca necesita algo, pero aún no sabes qué?</h2>
+                <p>Escríbenos y te ayudamos a descubrir el mejor camino para hacer crecer tu marca.</p>
             </div>
-            <form action="" method="get">
-                <input type="text" name="" id="" placeholder="Número de Celular" required>
-                <input type="submit" value="Enviar" class="btn">
-            </form>
+            <a href="" class="btn">Hablemos Ya! <i class='bx bxs-chevrons-right'></i></a>
         </div>
     </section>
 
