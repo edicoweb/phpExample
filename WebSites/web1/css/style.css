@@ -7,7 +7,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
-
+    list-style: none;
     text-decoration: none;
 }
 
@@ -25,12 +25,12 @@ img {
 
 body {
     color: var(--text-color);
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 300;
 }
 
 .container {
-    max-width: 968px;
+    max-width: 1000px;
     margin: auto;
     width: 100%;
 }
@@ -126,6 +126,7 @@ header.shadow {
 
 /* Home container */
 .home-container{
+    position: relative;
     background: rgb(15,57,87);
     background: linear-gradient(90deg, rgba(15,57,87,1) 0%, rgba(12,66,98,1) 43%, rgba(10,80,116,1) 77%, rgba(10,88,126,1) 100%, rgba(11,106,152,1) 100%);
 }
@@ -154,6 +155,7 @@ header.shadow {
     margin: 0.5rem 0 1.5rem;
     color: var(--bg-color);
     text-align: center;
+    font-size: 1rem;
 }
 
 /* Home - glowing animation */
@@ -251,6 +253,15 @@ header.shadow {
     margin-bottom: 1.5rem;
 }
 
+.home-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    object-fit: cover;
+    opacity: 0.1;
+}
+
 /* Services Content */
 .services-content {
     display: grid;
@@ -258,9 +269,8 @@ header.shadow {
 }
 
 .services-content .box {
-    position: relative;
-    padding: 1rem 0.5rem;
-    margin: 0 0.5rem;
+    padding: 2rem 1rem;
+    margin: 0 1rem;
     border-top: solid 0.3rem #f1f1f1;
     background: var(--bg-color);
     display: grid;
@@ -273,11 +283,11 @@ header.shadow {
 }
 
 .services-content .box-1:hover {
-    border-top: solid 0.3rem #f7c976;
+    border-top: solid 0.3rem #c4d5e9ff;
 }
 
 .services-content .box-2:hover {
-    border-top: solid 0.3rem #c4d5e9ff;
+    border-top: solid 0.3rem #f7c976;
 }
 
 .services-content .box-3:hover {
@@ -291,7 +301,8 @@ header.shadow {
 .box img {
     width: 50px;
     height: 50px;
-    margin: 0.5rem auto;
+    margin: auto;
+    margin-bottom: 0.5;
     object-fit: contain;
     object-position: center;
 }
@@ -300,10 +311,7 @@ header.shadow {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     width: 100%;
-    background-color: var(--bg-color);
-    border-radius: 0.5rem;
 }
 
 .box-text .title-services p {
@@ -311,17 +319,24 @@ header.shadow {
     text-align: center;
     font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .box-text .text-services{
     font-size: 16px;
     text-align: center;
+    margin: 0 0.5rem;
 }
 
 .box-text .item-services {
-    padding: 0.5rem 1rem;
-    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0;
+}
+
+.box-text .item-services i {
+    color: #7eb4fa;
+    margin-right: 10px;
 }
 
 .box-text .item-services p {
@@ -329,25 +344,12 @@ header.shadow {
     font-size: 16px;
 }
 
-.box-text .text-services li:nth-child(1) {
-    margin-top: 0;
-}
-
-/* .services-content .box span {
-    position: absolute;
-    height: 5px;
-    width: 20%;
-    left: 40%;
-    top: 59%;
-    background: var(--text-color);
-    opacity: 0.8;
-} */
-
 /* About Section */
 .about {
+    position: relative;
     display: grid;
     padding: 1rem 2rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1.5fr;
     align-items: center;
     gap: 1.5rem;
 }
@@ -358,9 +360,34 @@ header.shadow {
 
 .about-text h2 {
     color: var(--text-color);
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
+}
+
+.about .span-2 {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transform: rotate(20deg);
+    background-color: #ad91faa4;
+    bottom: 10%;
+    right: 9%;
+    z-index: -2;
+    opacity: 0.5;
+}
+
+.about .span-3 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #ffbc059d;
+    right: 3%;
+    top: 40%;
+    opacity: 0.5;
+    z-index: -2;
 }
 
 /* Why Us Section */
@@ -377,8 +404,8 @@ header.shadow {
 
 .why-us_card {
     box-shadow: 0 0 40px 0 rgba(36, 42, 86, 0.089);
-    padding: 2rem;
-    margin: 0 0.5rem;
+    padding: 3rem 2rem;
+    margin: 0 1rem;
     position: relative;
 }
 
@@ -387,7 +414,7 @@ header.shadow {
     display: flex;
     height: 5px;
     width: 50px;
-    top: 25px;
+    top: 35px;
     margin-bottom: 1rem;
 }
 
@@ -404,9 +431,9 @@ header.shadow {
 }
 
 .why-us_card h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 /* newsletter */
@@ -416,35 +443,24 @@ header.shadow {
 }
 
 .newsletter-content {
+    position: relative;
     display: grid;
-    grid-template-columns:3fr 1fr;
+    grid-template-columns:0.8fr 2.5fr 1fr;
     align-items: center;
     gap: 1.5rem;
     padding: 1.5rem 0;
 }
 
+.newsletter-img img{
+    position: absolute;
+    width: 150px;
+    bottom: 0;
+}
+
 .newsletter-text h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-}
-
-.newsletter-content form {
-    display: grid;
-}
-
-.newsletter-content form input {
-    border: none;
-    padding: 15px;
-    width: 100%;
-    outline-color: var(--main-color);
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    color: var(--text-color);
-}
-
-.newsletter-content form input::placeholder {
-    font-size: 1rem;
 }
 
 .newsletter-content .btn {
@@ -452,6 +468,8 @@ header.shadow {
     height: 60px;
     width: 100%;
     padding: 0.5rem;
+    font-weight: 400;
+    font-size: 1rem;
     border-radius: 0.5rem;
     color: var(--bg-color);
     background: var(--main-color);
@@ -486,7 +504,7 @@ header.shadow {
 }
 
 .footer-box h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -494,7 +512,7 @@ header.shadow {
 .footer-box a {
     color: var(--text-color);
     margin-bottom: 0.5rem;
-    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 .footer-box a:hover {
@@ -504,12 +522,7 @@ header.shadow {
 .footer-box p {
     color: var(--text-color);
     margin-bottom: 0.5rem;
-    cursor: pointer;
-    font-size: 0.8rem;
-}
-
-.footer-box p:hover {
-    color: var(--main-color);
+    font-weight: 500;
 }
 
 .social {

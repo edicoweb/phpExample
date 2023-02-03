@@ -1,0 +1,159 @@
+.container {
+    margin: 0 auto;
+    max-width: 700px;
+    width: 90%;
+}
+
+/* Menu */
+
+.navbar.active{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar li {
+    display: flex;
+    width: 100%;
+    margin: 0rem 0;
+    align-items: center;
+}
+
+.navbar li a{
+    width: 100%;
+    text-align: center;
+}
+
+/* Home */
+.home {
+    min-height: 400px;
+}
+
+.home-text {
+    padding: 0 4rem;
+}
+
+.home-text p {
+    display: none;
+}
+
+
+/* Home Animation */
+.glowing {
+    width: 50px;
+    left: 10%;
+}
+
+.glowing span:before {
+    width: 100px;
+    height: 100px;
+}
+
+/* Services */
+.services {
+    margin-top: 2rem;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-content {
+    grid-template-columns: 1fr;
+}
+
+.services-content .box {
+    max-width: 400px;
+    min-width: 300px;
+    margin: 1rem auto;
+}
+
+
+/* Abaout section */
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-text p {
+    text-align: center;
+}
+
+.about .span-1 {
+    display: none;
+}
+
+.about .span-2 {
+    display: none;
+}
+
+.about .span-3 {
+    display: none;
+}
+
+/* Why Us Section */
+
+.why-us_text {
+    margin-top: 1rem;
+}
+
+.why-us_cards {
+    grid-template-columns: 1fr;
+}
+
+.why-us_card {
+    max-width: 400px;
+    min-width: 300px;
+    margin: 1rem auto;
+}
+
+/* newsletter */
+.newsletter-content {
+    position: relative;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.newsletter-img img{
+    position: relative;
+}
+
+.newsletter-text h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.newsletter-text p {
+    text-align: center;
+    margin-top: 0;
+}
+
+.newsletter-content .btn {
+    width: 50%;
+}
+
+/* Footer */
+.footer {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 1rem;
+}
+
+.footer-box {
+    align-items: center;
+}
+
+@media (max-width: 450px) {
+    .logo {
+        width: 100px;
+        height: 26px;
+    }
+}
