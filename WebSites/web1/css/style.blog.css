@@ -1,0 +1,203 @@
+.home-blog {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-blog .home-text h1 {
+    position: relative;
+    margin-bottom: 1rem;
+    z-index: 10;
+}
+
+.home-blog form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-blog form button {
+    position: relative;
+    display: flex;
+    height: 2rem;
+    width: 2.5rem;
+    border-radius: 1rem 0 0 1rem;
+    border: none;
+    align-items: flex-end;
+    justify-content: flex-end;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.home-blog form button i {
+    font-size: 1.5rem;
+    margin: 0 0.3rem 0.2rem 0; 
+    color: #c0c0c0;
+}
+
+.home-blog form input{
+    position: relative;
+    width: 50%;
+    height: 2rem;
+    padding: 10px;
+    color: #797979;
+    border-radius: 0 1rem 1rem 0;
+    border: none;
+    outline: none;
+    z-index: 10;
+}
+
+/* Posts Section */
+.posts-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    justify-content: center
+}
+
+.box-blog {
+    display: grid;
+    position: relative;
+    max-width: 300px;
+    margin: 0 1rem 1rem 1rem;
+    padding-bottom: 1rem;
+    background: var(--bg-color);
+    box-shadow: 0 0 20px 0 rgba(27, 27, 27, 0.089);
+    row-gap: 0.5rem;
+}
+
+.box-blog img {
+    width: 100%;
+    height: 10rem;
+    border-radius: 0.2rem 0.2rem 0 0;
+    object-fit: cover;
+}
+
+.box-blog .box-blog_title {
+    font-weight: 500;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.box-blog .box-blog_next {
+    margin: auto;
+    color: var(--main-color);
+}
+
+.box-blog small {
+    position: absolute;
+    padding: 3px 15px;
+    top: 15px;
+    right: 0;
+    font-weight: 500;
+    color: var(--bg-color);
+    background-color: var(--light-color);
+}
+
+/* Pagination Section */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.pagination a {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    /* margin: 5px; */
+    background: var(--bg-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination i {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.pagination .deactivate i {
+    color: #b4b2b2;
+}
+
+.pagination ul {
+    display: flex;
+}
+
+.pagination ul li a {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.pagination ul li a:hover {
+    color: var(--main-color);
+}
+
+.pagination ul li .active {
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+.pagination ul li .active:hover {
+    color: var(--bg-color);
+}
+
+/*****************POST.VIEW.PHP*****************/
+
+.post-container {
+    padding-top: 3rem;
+}
+
+.header-post {
+    background: #224b66;
+}
+
+.header-post .btn {
+    display: flex;
+    height: 100%;
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    color: var(--bg-color);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 1s linear;
+}
+
+.header-post .btn i {
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+}
+
+.header-post .btn .bxl-twitter {
+    color: #00d9ff;
+}
+
+.header-post .btn .bxl-facebook{
+    color: #fceeee;
+}
+.header-post .btn .bxl-instagram-alt {
+    color: #ffadad;
+}
+
+/* Post container */
+
+.post-container .heading a {
+    display: flex;
+    color: #797979;
+    align-items: center;
+}
+
+.post-container .heading a i {
+    font-size: 1rem;
+}
+

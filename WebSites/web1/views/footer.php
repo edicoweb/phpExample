@@ -1,8 +1,8 @@
 <section class="footer container">
     <div class="footer-box footer-bussines">
         <h3>Grupo Vianca</h3>
-        <a href="#about">Nosotros</a>
-        <a href="#">Blog</a>
+        <a href="<?php echo RUTA; ?>">Inicio</a>
+        <a href="<?php echo 'blog.php' ?>">Blog</a>
         <a href="#">Contáctanos</a>
         <a href="#">Políticas de Privacidad</a>
     </div>

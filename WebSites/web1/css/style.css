@@ -13,20 +13,17 @@
 
 :root {
     --main-color: #0c7fb7;
-    --light-color: rgb(255, 198, 42);
+    --light-color: rgb(219, 162, 4);
     --text-color: #2e2e2e;
     --hover-color: #0c7ab1;
     --bg-color: #fff;
-}
-
-img {
-    width: 100%;
 }
 
 body {
     color: var(--text-color);
     font-size: 0.8rem;
     font-weight: 300;
+    background: #ffffff;
 }
 
 .container {
@@ -140,22 +137,26 @@ header.shadow {
 }
 
 .home-text h1 {
+    position: relative;
     font-size: 1.6rem;
     font-weight: 500;
     color: var(--bg-color);
     text-align: center;
     margin-top: 2rem;
+    z-index: 10;
 }
 
 .home-text h1 span {
-    color: var(--light-color);
+    color: #fad045;
 }
 
 .home-text p {
+    position: relative;
     margin: 0.5rem 0 1.5rem;
     color: var(--bg-color);
     text-align: center;
     font-size: 1rem;
+    z-index: 10;
 }
 
 /* Home - glowing animation */
@@ -233,6 +234,15 @@ header.shadow {
     }
 }
 
+.home-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    object-fit: cover;
+    opacity: 0.1;
+}
+
 /* Services */
 
 .services {
@@ -251,15 +261,6 @@ header.shadow {
     width: 100px;
     background: var(--main-color);
     margin-bottom: 1.5rem;
-}
-
-.home-container img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    object-fit: cover;
-    opacity: 0.1;
 }
 
 /* Services Content */
@@ -363,31 +364,6 @@ header.shadow {
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-}
-
-.about .span-2 {
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    transform: rotate(20deg);
-    background-color: #ad91faa4;
-    bottom: 10%;
-    right: 9%;
-    z-index: -2;
-    opacity: 0.5;
-}
-
-.about .span-3 {
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: #ffbc059d;
-    right: 3%;
-    top: 40%;
-    opacity: 0.5;
-    z-index: -2;
 }
 
 /* Why Us Section */

@@ -93,8 +93,6 @@
             Déjanos asesorarte y caminemos juntos en tu proceso de transformación digital.<br>
             </p>
         </div>
-        <span class="span-2"></span>
-        <span class="span-3"></span>
     </section>
 
     <!-- why-us -->
