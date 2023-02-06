@@ -157,3 +157,13 @@
         height: 26px;
     }
 }
+
+
+/* Post.view */
+.posts-container {
+    grid-template-columns: 1fr;
+}
+
+.posts-list {
+    display: none;
+ }

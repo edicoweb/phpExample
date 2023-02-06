@@ -14,15 +14,26 @@
 </header>
 <!-- Home Section -->
 <section class="services post-container container">
-    <div class="heading">
-        <a href="<?php echo RUTA.'/blog.php'; ?>"> <i class='bx bx-arrow-from-right'></i> Ver mas posts</a>
+    <div class="heading-post">
+        <a href="<?php echo RUTA.'/blog.php'; ?>"><i class='bx bx-arrow-back'></i>Ver mas posts</a>
     </div>
-    <div class="posts-content">
-        <div href="" class="box-blog">
+    <div class="posts-container">
+        <div href="" class="post-content">
+            <h2 class="post-title">FLISoL: Festival Latinoamericano de Software Libre</h2>
             <img src="assets/img/3.png" alt="">
-            <a class="box-blog_title" href="">FLISoL: Festival Latinoamericano de Software Libre</a>
-            <a class="box-blog_next" href="">Leer Post<i class='bx bx-right-arrow-alt'></i></a>
-            <small>Enero 2023</small>
+            <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quos repellat possimus dolorum cumque molestias tempore maxime dolores deleniti ullam enim excepturi aut sequi, laborum consectetur aliquam officia iure molestiae? <br> <br>
+            Laudantium labore voluptate vero cum ea iusto recusandae corporis facere quo velit, facilis delectus aliquam, exercitationem similique dolorum quia reiciendis? Autem aut commodi, maxime laboriosam magni quidem accusantium expedita illo! <br> <br>
+            Reprehenderit dignissimos quas tempora, necessitatibus delectus est harum ducimus ratione vitae accusamus recusandae debitis ipsa iure ex odio adipisci cum blanditiis ipsam alias officia libero. Inventore ab fugit itaque minus?</p>
+            <small>Publicado: Enero del 2023</small>
+        </div>
+        <div class="posts-list">
+            <p>Leer mas posts</p>
+            <ul>
+                <li><a href="">FLISoL: Festival Latinoamericano de Software Libre</a></li>
+                <li><a href="">FLISoL: Festival Latinoamericano de Software Libre</a></li>
+                <li><a href="">FLISoL: Festival Latinoamericano de Software Libre</a></li>
+                <li><a href="">FLISoL: Festival Latinoamericano de Software Libre</a></li>
+            </ul>
         </div>
     </div>  
 </section>

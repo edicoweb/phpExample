@@ -57,6 +57,12 @@
             <a class="box-blog_next" href="">Leer Post<i class='bx bx-right-arrow-alt'></i></a>
             <small>Enero 2023</small>
         </div>
+        <div href="" class="box-blog">
+            <img src="assets/img/3.png" alt="">
+            <a class="box-blog_title" href="">FLISoL: Festival Latinoamericano de Software Libre</a>
+            <a class="box-blog_next" href="">Leer Post<i class='bx bx-right-arrow-alt'></i></a>
+            <small>Enero 2023</small>
+        </div>
     </div>  
 </section>
 

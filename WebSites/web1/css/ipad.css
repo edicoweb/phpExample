@@ -1,5 +1,5 @@
 .container {
-    max-width: 850px;
+    max-width: 800px;
 }
 
 /* Home Animation */
@@ -8,7 +8,25 @@
     height: 200px;
 }
 
+/* Services */
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Newsltter */
 .newsletter-content {
-    grid-template-columns:0.8fr 2fr 1fr;
+    grid-template-columns:0.8fr 1.5fr 1fr;
 }
+
+/* Post.view */
+
+.posts-container {
+    grid-template-columns: 1fr;
+}
+
+ .posts-list {
+    display: none;
+ }
