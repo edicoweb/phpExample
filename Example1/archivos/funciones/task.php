@@ -11,14 +11,14 @@
     <strong>Completadas::</strong>
     <?php foreach($completedTasks as $task): ?>
         <ul>
-            <li><?php echo $task->title; ?></li>
+            <li><?php echo $task['title']; ?></li>
         </ul>
     <?php endforeach; ?>
 
     <strong>Pendientes::</strong>
     <?php foreach($pendingTasks as $task): ?>
         <ul>
-            <li><?php echo $task->title; ?></li>
+            <li><?php echo $task['title']; ?></li>
         </ul>
     <?php endforeach; ?>
 </body>

@@ -1,38 +1,20 @@
 <?php
-
-class Task {
-    // Propiedades
+class Task{
     public $title;
     public $completed;
-    // Metodos
-    //Constructor
+
+    // Contructor property promotion
     public function __construct($title, $completed = false){
         $this->title = $title;
         $this->completed = $completed;
     }
 
-    public function buildString(){
-        return "Title: {$this->title} \n" .
-                "Completed: " . ($this->completed ? "Si" : "No");
-    }
-
-    public function save($name){
-        $file = fopen($name, 'w');
-        fwrite($file, $this->buildString());
+    public function save($nameFile){
+        $file = fopen($nameFile, 'w');
+        fwrite($file, "Titulo: {$this->title} \n Complete: " . ($this->completed ? 'SI' : 'NO'));
         fclose($file);
     }
-    
 }
 
-// Constructor Property Promotion
-/**
-class Task {
-    public function __construct(public $title, public $completed = false){
-        
-    }
-}
-**/
-
-$task = new Task("Ir al supermercado", true);
+$task = new Task('Ir al supermercado');
 $task->save("task-1.txt");
-

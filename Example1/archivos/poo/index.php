@@ -1,37 +1,27 @@
 <?php
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-// require 'functions.php';
-require 'Models/Task.php';
+require 'functions/function.php';
+require 'models/Task.php';
 
-// Instanciar objetos
 $tasks = [
-    new Task('Curso de C'),
-    new Task('introducción a Web 0.3', true),
-    new Task('Curso de html'),
-    new Task(completed : true, title: 'Curso de ccs'),
+    new Task(completed: true, title: 'Estudiar HTML'),
+    new Task('Estudiar Css', true),
+    new Task('Estudiar PHP'),
+    new Task('Estudiar CSs')
 ];
 
-// dd($tasks);
+// array_filter($array, function (){}) funcion anonima o tambien conocido como callback
 
-$coursesCompleted = array_filter($tasks, function($task){
+$completedTasks = array_filter($tasks, function ($task) {
     return $task->completed;
 });
 
-// echo "COMPLETED \n";    
-// foreach ($coursesCompleted as $courseCompleted) {
-//     echo $courseCompleted->title . "\n";
-// }
-
-$coursesIncompleted = array_filter($tasks, function($task){
+$pendingTasks = array_filter($tasks, function ($task){
     return !$task->completed;
 });
 
-// echo "\nINCOMPLETED \n";
-// foreach ($coursesIncompleted as $courseIncompleted){
-//     echo $courseIncompleted->title . "\n";
-// }
-
-require 'Views/index.view.php';
+require 'views/index.view.php';
