@@ -1,3 +1,0 @@
-topic: Aprobar el Examen
-info: Php 8 primer marcial
-completed: true

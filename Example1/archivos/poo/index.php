@@ -7,12 +7,8 @@ error_reporting(E_ALL);
 require 'functions/function.php';
 require 'models/Task.php';
 
-$tasks = [
-    new Task(completed: true, title: 'Estudiar HTML'),
-    new Task('Estudiar Css', true),
-    new Task('Estudiar PHP'),
-    new Task('Estudiar CSs')
-];
+$pdo = dbConnect("localhost", "prueba_csl", "root", "");
+$tasks = getTasks($pdo);
 
 // array_filter($array, function (){}) funcion anonima o tambien conocido como callback
 
