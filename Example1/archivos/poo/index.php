@@ -4,13 +4,12 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-require 'functions/function.php';
 require 'models/Task.php';
+$query = require 'boostrap.php';
 
-$pdo = dbConnect("localhost", "prueba_csl", "root", "");
-$tasks = getTasks($pdo);
+$tasks = $query->selectAll('tasks', 'Task');
 
-// array_filter($array, function (){}) funcion anonima o tambien conocido como callback
+// $tasks[0]->setCol9or(ColorsEnum::GREEN->value);
 
 $completedTasks = array_filter($tasks, function ($task) {
     return $task->completed;
