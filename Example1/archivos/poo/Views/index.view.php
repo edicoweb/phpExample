@@ -7,6 +7,16 @@
     <title>Document</title>
 </head>
 <body>
+    <form action="create-task.php" method="post">
+        <input type="text" name="title" placeholder="Titulo">
+        <select name="completed" id="completed">
+            <option value="0">pendiente</option>
+            <option value="1">completado</option>
+        </select>
+        <button type="submit">Guardar</button>
+    </form>
+
+
     <h1>Tasks</h1>
     <strong>Completadas::</strong>
     <?php foreach($completedTasks as $task): ?>

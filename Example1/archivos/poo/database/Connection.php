@@ -1,9 +1,9 @@
 <?php
 class connection {
-    public static function start($db_host, $db_name, $db_user, $db_pass)
+    public static function start($config)
     {
         try{
-            return new PDO("mysql:host=$db_host; dbname=$db_name", "$db_user", "$db_pass");
+            return new PDO("{$config['type']}:host={$config['host']}; dbname={$config['dbname']}", $config['user'], $config['password']);
         } catch(PDOException $e){
             echo "Este es un error ".$e->getMessage();
         }
