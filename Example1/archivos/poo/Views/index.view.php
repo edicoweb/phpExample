@@ -21,14 +21,28 @@
     <strong>Completadas::</strong>
     <?php foreach($completedTasks as $task): ?>
         <ul>
-            <li><?php echo $task->title; ?></li>
+            <li>
+                <?php echo $task->title; ?>
+                <form style="display: inline;" action="toggle.task.php" method="post">
+                    <input type="hidden" name="completed" value="0">
+                    <input type="hidden" name="id" value="<?= $task->id ?>">
+                    <button type="submit"> X </button>
+                </form>
+            </li>
         </ul>
     <?php endforeach; ?>
 
     <strong>Pendientes::</strong>
     <?php foreach($pendingTasks as $task): ?>
         <ul>
-            <li><?php echo $task->title; ?></li>
+            <li>
+                <?php echo $task->title; ?>
+                <form style="display: inline;" action="toggle.task.php" method="post">
+                    <input type="hidden" name="completed" value="1">
+                    <input type="hidden" name="id" value="<?= $task->id ?>">
+                    <button type="submit"> V </button>
+                </form>
+            </li>
         </ul>
     <?php endforeach; ?>
 </body>

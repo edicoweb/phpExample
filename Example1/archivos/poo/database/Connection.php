@@ -5,7 +5,7 @@ class connection {
         try{
             return new PDO("{$config['type']}:host={$config['host']}; dbname={$config['dbname']}", $config['user'], $config['password']);
         } catch(PDOException $e){
-            echo "Este es un error ".$e->getMessage();
+            die("Este es un error ".$e->getMessage());
         }
     }
 }
