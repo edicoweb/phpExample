@@ -28,6 +28,10 @@
                     <input type="hidden" name="id" value="<?= $task->id ?>">
                     <button type="submit"> X </button>
                 </form>
+                <form onsubmit="return confirm('¿Estas seguro de eliminar?');" style="display: inline;" action="delete.task.php" method="post">
+                    <input type="hidden" name="id" value="<?= $task->id ?>">
+                    <button type="submit">Eliminar</button>
+                </form>
             </li>
         </ul>
     <?php endforeach; ?>
@@ -41,6 +45,10 @@
                     <input type="hidden" name="completed" value="1">
                     <input type="hidden" name="id" value="<?= $task->id ?>">
                     <button type="submit"> V </button>
+                </form>
+                <form onsubmit="return confirm('¿Estas seguro de eliminar?');" style="display: inline;" action="delete.task.php" method="post">
+                    <input type="hidden" name="id" value="<?= $task->id ?>">
+                    <button type="submit">Eliminar</button>
                 </form>
             </li>
         </ul>

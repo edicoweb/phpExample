@@ -28,11 +28,22 @@ Class QueryBuilder {
     public function update($table, $id, $params){
         $cols = array_keys($params);
         $cols = implode(', ', array_map(function($col){ return "{$col}=:{$col}"; }, $cols));
-        $sql = "UPDATE {$table} SET {$cols} WHERE id =:id";
+        $sql = "UPDATE {$table} SET {$cols} WHERE id=:id";
         
         try {
             $query = $this->pdo->prepare($sql);
             $query->execute([...$params, 'id' => $id]);
+        } catch (PDOException $e) {
+            die($e->getMessage());
+        }
+    }
+
+    public function delete($table, $id){
+        $sql = "DELETE FROM $table WHERE id=:id";
+
+        try {
+            $query = $this->pdo->prepare($sql);
+            $query->execute(['id' => $id]);
         } catch (PDOException $e) {
             die($e->getMessage());
         }

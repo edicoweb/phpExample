@@ -1,5 +1,5 @@
 <?php
-$query = require 'boostrap.php';
+$query = require 'core/boostrap.php';
 require 'models/Task.php';
 
 $tasks = $query->selectAll('tasks', 'Task');

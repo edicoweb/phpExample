@@ -1,6 +1,6 @@
 <?php
 require 'functions/function.php';
-$query = require 'boostrap.php';
+$query = require 'core/boostrap.php';
 
 $query->create('tasks', [
     'title' => $_POST['title'],
