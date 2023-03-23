@@ -11,7 +11,7 @@
         <h3> Tareas completas</h3>
         <?php foreach ($completedTasks as $completedTask):?>
             <ul>
-                <li> <?php echo $completedTask['title'] ?></li><br>
+                <li> <?php echo $completedTask->title; ?></li><br>
             </ul>
         <?php endforeach; ?>
     </div>
@@ -20,7 +20,7 @@
         <h3> Tareas pendientes</h3>
         <?php foreach ($pendingTasks as $pendingTask):?>
             <ul>
-                <li> <?php echo $pendingTask['title'] ?></li><br>
+                <li> <?php echo $pendingTask->title; ?></li><br>
             </ul>
         <?php endforeach; ?>
     </div>
