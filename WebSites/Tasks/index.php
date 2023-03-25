@@ -1,12 +1,16 @@
 <?php
 require 'functions/function.php';
-require 'Models/Task.php';
-$query = require 'boostrap.php';
+$query = require 'Core/boostrap.php';
 
-$tasks = $query->selectAll("tasks", "Task");
-// dd($tasks);
+//$routes = [ routes array ];
+$routes = require 'Routes/Routes.php';
 
-$completedTasks = array_filter($tasks, function($task){ return $task->completed; });
-$pendingTasks = array_filter($tasks, function($task){ return !$task->completed; });
+//Return the url (Core/Request)
+$url = Request::url();
 
-require 'Views/index.view.php';
+//we pass the $Routes
+$router = new Router;
+$router->register($routes);
+
+//devuelve la ruta
+require $router->handle($url);

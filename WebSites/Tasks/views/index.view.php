@@ -7,7 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="create.task.php" method="post">
+    <nav>
+        <a href="about">Acerca de mi</a>
+        <a href="projects">Proyectos</a>
+        <a href="contact">Contáctame</a>
+    </nav>
+
+    <form action="task/create" method="post">
         <input type="text" name="title" placeholder="Titulo">
         <select name="completed" id="completed">
             <option value="">Seleccionar</option>
@@ -23,14 +29,14 @@
             <ul>
                 <li>
                     <?php echo $task->title; ?>
-                    <form style="display: inline;" action="edit.task.php" method="post">
+                    <form style="display: inline;" action="task/edit" method="post">
                         <input type="hidden" name="completed" value="0">
                         <input type="hidden" name="id" value="<?php echo $task->id ?>">
                         <button type="submit">Pasar a pendientes</button>
                     </form>
-                    <form style="display: inline"; action="delete.task.php" method="post">
+                    <form onsubmit="return confirm('¿Estas seguro de elimar el registro?');" style="display: inline"; action="task/delete" method="post">
                         <input type="hidden" name="id" value="<?php echo $task->id ?>">
-                        <button style="background: #ff0000; color: #fff; border: none;" type="submit">Delete</button>
+                        <button style="background: #ff0000; color: #fff;" type="submit">Delete</button>
                     </form>
                 </li><br>
             </ul>
@@ -43,14 +49,14 @@
             <ul>
                 <li>
                     <?php echo $task->title; ?>
-                    <form style="display: inline;" action="edit.task.php" method="post">
+                    <form style="display: inline;" action="task/edit" method="post">
                         <input type="hidden" name="completed" value="1">
                         <input type="hidden" name="id" value="<?php echo $task->id ?>">
                         <button type="submit">Completar</button>
                     </form>
-                    <form style="display: inline"; action="delete.task.php" method="post">
+                    <form onsubmit="return confirm('¿Estas seguro de elimar el registro?');" style="display: inline"; action="task/delete" method="post">
                         <input type="hidden" name="id" value="<?php echo $task->id ?>">
-                        <button style="background: #ff0000; color: #fff; border: none;" type="submit">Delete</button>
+                        <button style="background: #ff0000; color: #fff;" type="submit">Delete</button>
                     </form>
                 </li><br>
             </ul>
