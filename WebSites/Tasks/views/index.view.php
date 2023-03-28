@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <nav>
-        <a href="about">Acerca de mi</a>
-        <a href="projects">Proyectos</a>
-        <a href="contact">Contáctame</a>
-    </nav>
+<?php require 'Partials/head.view.php'; ?>
 
     <form action="task/create" method="post">
         <input type="text" name="title" placeholder="Titulo">
@@ -62,5 +49,5 @@
             </ul>
         <?php endforeach; ?>
     </div>
-</body>
-</html>
+
+<?php require 'Partials/footer.view.php'; ?>
