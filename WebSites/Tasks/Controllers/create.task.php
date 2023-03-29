@@ -1,5 +1,5 @@
 <?php
-$query->create('tasks', [
+App::get('database')->create('tasks', [
     'title' => $_POST['title'],
     'completed' => $_POST['completed']
 ]);
