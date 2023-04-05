@@ -3,7 +3,6 @@ require 'App.php';
 require 'Database/Connection.php';
 require 'Database/QueryBuilder.php';
 require 'Models/Task.php';
-require 'Models/Model.php';
 require 'Router.php';
 require 'Request.php';
 

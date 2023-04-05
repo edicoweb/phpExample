@@ -3,6 +3,7 @@
 class App {
 
     protected static $dependencies = [];
+
     public static function set($key, $value){
         static::$dependencies[$key] = $value;
     }

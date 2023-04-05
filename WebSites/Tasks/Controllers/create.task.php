@@ -1,5 +1,5 @@
 <?php
-Model::create([
+Task::create([
     'title' => $_POST['title'],
     'completed' => $_POST['completed']
 ]);
