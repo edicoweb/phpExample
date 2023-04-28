@@ -11,6 +11,12 @@ class QueryBuilder{
         return $query->fetchAll(PDO::FETCH_CLASS, $model);
     }
 
+    public function find($table, $id){
+        $query = $this->pdo->prepare("SELECT * FROM {$table} WHERE id={$id} LIMIT 0,1");
+        $query->execute();
+        return $query->fetchAll(PDO::FETCH_ASSOC)[0];
+    }
+
     public function create($table, $params){
         $cols = implode(', ', array_keys($params));
         $placeholders = ':'.implode(', :', array_keys($params));
