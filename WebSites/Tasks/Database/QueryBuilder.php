@@ -5,10 +5,10 @@ class QueryBuilder{
         $this->pdo = $pdo;
     }
 
-    public function selectAll($table, $model){
+    public function selectAll($table){
         $query = $this->pdo->prepare("SELECT * FROM {$table}");
         $query->execute();
-        return $query->fetchAll(PDO::FETCH_CLASS, $model);
+        return $query->fetchAll(PDO::FETCH_ASSOC);
     }
 
     public function find($table, $id){
