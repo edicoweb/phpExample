@@ -14,7 +14,7 @@ class Model {
     }
 
     public static function create($properties){
-        $model = new static($properties);
+        $model = new static($properties); //Instanciamos modelo con new static por ejemplo new task
         $model->save();
         return $model;
     }
@@ -27,19 +27,26 @@ class Model {
         App::get('database')->create($this->table, $this->properties);
     }
 
-    // Editar Task
-    public function update($properties){
-        App::get('database')->update($this->getTable(), $this->properties['id'], $properties);
-        $this->setProperties($properties);
-        return $this;
-    }
-
+    
     // Buscar task
     public static function find($id){
         $model = new static;
         $properties = App::get('database')->find($model->getTable(), $id);
         $model->setProperties($properties);
         return $model;
+    }
+
+    public static function findBy($params) {
+        $model = new static;
+        $rows = App::get('database')->findBy($model->getTable(), $params);
+        return array_map(function($row){ return new static($row); }, $rows);
+    }
+    
+    // Editar Task
+    public function update($properties){
+        App::get('database')->update($this->getTable(), $this->properties['id'], $properties);
+        $this->setProperties($properties);
+        return $this;
     }
 
     //El proposito de este modelo es retornar el valor de la tabla
@@ -64,4 +71,5 @@ class Model {
         }
         return null;
     }
+
 }
