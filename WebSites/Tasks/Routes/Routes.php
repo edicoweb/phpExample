@@ -10,4 +10,5 @@ return [
     'task/delete' => 'Controllers/delete.task.php',
     'login-form' => 'Controllers/login-form.php',
     'login' => 'Controllers/login.php',
+    'logout' => 'Controllers/logout.php',
 ];
