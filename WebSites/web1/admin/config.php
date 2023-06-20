@@ -10,5 +10,5 @@ $dbConfig = [
 ];
 
 $blogConfig = [
-    postPorPagina
+    'postPorPagina' => 5,
 ];
