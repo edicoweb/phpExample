@@ -10,5 +10,11 @@ $dbConfig = [
 ];
 
 $blogConfig = [
-    'postPorPagina' => 5,
+    'postPorPagina' => 2,
+    'carpetaImagenes' => 'images/',
+];
+
+$blogAdmin = [
+    'users' => 'edy',
+    'password' => '123',
 ];
