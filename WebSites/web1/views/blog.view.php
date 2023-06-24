@@ -23,46 +23,15 @@
     </div>
     <div class="posts-content">
         <!-- Box-1 -->
+        <?php foreach ($posts as $post): ?>
         <div class="box-blog">
-            <img src="assets/img/1.jpg" alt="">
-            <a class="box-blog_title" href="">FLISoL: Festival Latinoamericano de Software Libre</a>
-            <a class="box-blog_next" href="<?php echo 'post.php'; ?>">Leer Post<i class='bx bx-right-arrow-alt'></i></a>
+            <img src="../imagesPrueba/<?= $post['img'] ?>" alt="Portada del Post">
+            <a class="box-blog_title" href=""><?= $post['title'] ?></a>
+            <a class="box-blog_next" href="<?php echo 'post.php?id='.$post['id']; ?>">Leer Post<i class='bx bx-right-arrow-alt'></i></a>
             <small>Enero 2023</small>
         </div>
-
-        <div href="" class="box-blog">
-            <img src="assets/img/2.png" alt="">
-            <a class="box-blog_title" href="">FLISoL: Festival Latinoamericano de Software Libre</a>
-            <a class="box-blog_next" href="">Leer Post<i class='bx bx-right-arrow-alt'></i></a>
-            <small>Enero 2023</small>
-        </div>
-
-        <div href="" class="box-blog">
-            <img src="assets/img/3.png" alt="">
-            <a class="box-blog_title" href="">FLISoL: Festival Latinoamericano de Software Libre</a>
-            <a class="box-blog_next" href="">Leer Post<i class='bx bx-right-arrow-alt'></i></a>
-            <small>Enero 2023</small>
-        </div>
-
-        <div href="" class="box-blog">
-            <img src="assets/img/1.jpg" alt="">
-            <a class="box-blog_title" href="">FLISoL: Festival Latinoamericano de Software Libre</a>
-            <a class="box-blog_next" href="">Leer Post<i class='bx bx-right-arrow-alt'></i></a>
-            <small>Enero 2023</small>
-        </div>
-
-        <div href="" class="box-blog">
-            <img src="assets/img/3.png" alt="">
-            <a class="box-blog_title" href="">FLISoL: Festival Latinoamericano de Software Libre</a>
-            <a class="box-blog_next" href="">Leer Post<i class='bx bx-right-arrow-alt'></i></a>
-            <small>Enero 2023</small>
-        </div>
-        <div href="" class="box-blog">
-            <img src="assets/img/3.png" alt="">
-            <a class="box-blog_title" href="">FLISoL: Festival Latinoamericano de Software Libre</a>
-            <a class="box-blog_next" href="">Leer Post<i class='bx bx-right-arrow-alt'></i></a>
-            <small>Enero 2023</small>
-        </div>
+        <?php endforeach; ?>
+        
     </div>  
 </section>
 

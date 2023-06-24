@@ -17,3 +17,16 @@ function LimpiarDatos($datos){
     $datos = htmlspecialchars($datos);
     return $datos;
 }
+
+/** esta fn()  no retorna la pagina actual en lo que nos encontramos */
+function paginaActual(){
+    return isset($_GET['p']) ? (int)$_GET['p'] : 1;
+}
+
+/** Con esta función obtenemos articulos */
+function obtenerPost($postPorPagina, $conexion){
+    $inicio = (paginaActual() > 1) ? paginaActual() * $postPorPagina - $postPorPagina : 0;
+    $sentencia = $conexion->prepare("SELECT SQL_CALC_FOUND_ROWS * FROM articles LIMIT $inicio, $postPorPagina");
+    $sentencia->execute();
+    return $sentencia->fetchAll();
+}

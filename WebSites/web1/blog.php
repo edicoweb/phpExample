@@ -7,5 +7,8 @@ if(!$conexion){
     header("Location: error.php");
 }
 
+/** Enviando parametroa a nuestra function obtenerPost() */
+$posts = obtenerPost($blogConfig['postPorPagina'], $conexion);
 
 require "views/blog.view.php";
+
