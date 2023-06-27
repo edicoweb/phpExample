@@ -28,10 +28,9 @@
             <img src="../imagesPrueba/<?= $post['img'] ?>" alt="Portada del Post">
             <a class="box-blog_title" href=""><?= $post['title'] ?></a>
             <a class="box-blog_next" href="<?php echo 'post.php?id='.$post['id']; ?>">Leer Post<i class='bx bx-right-arrow-alt'></i></a>
-            <small>Enero 2023</small>
+            <small><?= fecha($post['date']) ?></small>
         </div>
         <?php endforeach; ?>
-        
     </div>  
 </section>
 

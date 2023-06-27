@@ -30,3 +30,26 @@ function obtenerPost($postPorPagina, $conexion){
     $sentencia->execute();
     return $sentencia->fetchAll();
 }
+
+/**Vamos a limpiar nuestro id capturado en post.php */
+function idArticulo($id){
+    return (int)limpiarDatos($id);
+}
+
+/** Obtenemos post por id */
+function obtenerPostPorId($conexion, $id){
+    $resultado = $conexion->query("SELECT * FROM articles WHERE id = $id LIMIT 1");
+    $resultado = $resultado->fetchAll();
+    return ($resultado) ? $resultado : false;
+}
+
+function fecha($fecha){
+    $timestamp = strtotime($fecha);
+    $meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+    $dia = date('d', $timestamp);
+    $mes = date('m', $timestamp)-1;
+    $annio = date('Y', $timestamp);
+
+    $fecha = "$dia de". $meses[$mes] . " del $annio";
+    return $fecha;
+}

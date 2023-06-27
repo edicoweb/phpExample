@@ -15,16 +15,13 @@
 <!-- Home Section -->
 <section class="services post-container container">
     <div class="heading-post">
-        <a href="<?php echo RUTA.'/blog.php'; ?>"><i class='bx bx-arrow-back'></i>Ver mas posts</a>
+        <a href="<?php echo '/blog.php'; ?>"><i class='bx bx-arrow-back'></i>Ver mas posts</a>
     </div>
     <div class="posts-container">
         <div href="" class="post-content">
-            <h2 class="post-title">FLISoL: Festival Latinoamericano de Software Libre</h2>
-            <img src="assets/img/3.png" alt="">
-            <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quos repellat possimus dolorum cumque molestias tempore maxime dolores deleniti ullam enim excepturi aut sequi, laborum consectetur aliquam officia iure molestiae? <br> <br>
-            Laudantium labore voluptate vero cum ea iusto recusandae corporis facere quo velit, facilis delectus aliquam, exercitationem similique dolorum quia reiciendis? Autem aut commodi, maxime laboriosam magni quidem accusantium expedita illo! <br> <br>
-            Reprehenderit dignissimos quas tempora, necessitatibus delectus est harum ducimus ratione vitae accusamus recusandae debitis ipsa iure ex odio adipisci cum blanditiis ipsam alias officia libero. Inventore ab fugit itaque minus?</p>
-            <small>Publicado: Enero del 2023</small>
+            <h2 class="post-title"><?= $post['title'] ?></h2>
+            <img src="../imagesPrueba/<?php echo $post['img'] ?>" alt="">
+            <p class="post-text"><?= $post['content']?></small>
         </div>
         <div class="posts-list">
             <p>Leer mas posts</p>

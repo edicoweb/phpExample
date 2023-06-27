@@ -10,7 +10,7 @@ $dbConfig = [
 ];
 
 $blogConfig = [
-    'postPorPagina' => 2,
+    'postPorPagina' => 3,
     'carpetaImagenes' => 'images/',
 ];
 
