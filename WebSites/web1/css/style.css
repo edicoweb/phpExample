@@ -62,14 +62,14 @@ header.shadow {
 .logo {
     width: 120px;
     height: 31px;
-    background-image: url("../assets/img/logo-white.svg");
+    background-image: url("../css/assets/img/logo-white.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .logo.logo-black{
-    background-image: url("../assets/img/logo-black.svg");
+    background-image: url("../css/assets/img/logo-black.svg");
 }
 
 .menu-icon {

@@ -1,7 +1,7 @@
 <header>
     <div class="nav container">
         <!-- Logo -->
-        <a href="<?php echo RUTA; ?>" class="logo">
+        <a href="<?php echo 'index.php'; ?>" class="logo">
         </a>
         <!-- Nav Icon -->
         <div class="menu-icon">

@@ -23,6 +23,12 @@ function paginaActual(){
     return isset($_GET['p']) ? (int)$_GET['p'] : 1;
 }
 
+function obtenerArticulos($conexion){
+    $posts = $conexion->prepare("SELECT * FROM articles");
+    $posts->execute();
+    return $posts->fetchAll();
+}
+
 /** Con esta función obtenemos articulos */
 function obtenerPost($postPorPagina, $conexion){
     $inicio = (paginaActual() > 1) ? paginaActual() * $postPorPagina - $postPorPagina : 0;
@@ -43,6 +49,7 @@ function obtenerPostPorId($conexion, $id){
     return ($resultado) ? $resultado : false;
 }
 
+/** Conversion de fecha a lenguaje humano */
 function fecha($fecha){
     $timestamp = strtotime($fecha);
     $meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
@@ -50,6 +57,16 @@ function fecha($fecha){
     $mes = date('m', $timestamp)-1;
     $annio = date('Y', $timestamp);
 
-    $fecha = "$dia de". $meses[$mes] . " del $annio";
+    $fecha = $meses[$mes] . " del $annio";
     return $fecha;
+}
+
+/** Vamos a calcular el numero de paginas */
+function numeroPaginas($postPorPagina, $conexion){
+    $totalPost = $conexion->prepare("SELECT FOUND_ROWS() as total");
+    $totalPost->execute();
+    $totalPost = $totalPost->fetch()['total'];
+
+    $numeroPaginas = ceil($totalPost / $postPorPagina);
+    return $numeroPaginas;
 }

@@ -10,5 +10,7 @@ if(!$conexion){
 /** Enviando parametroa a nuestra function obtenerPost() */
 $posts = obtenerPost($blogConfig['postPorPagina'], $conexion);
 
+$numeroPaginas = numeroPaginas($blogConfig['postPorPagina'], $conexion);
+
 require "views/blog.view.php";
 

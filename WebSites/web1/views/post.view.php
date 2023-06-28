@@ -4,7 +4,7 @@
 <header class="header-post">
     <div class="nav container">
         <!-- Logo -->
-        <a href="<?php echo RUTA; ?>" class="logo">
+        <a href="<?php echo 'index.php'; ?>" class="logo">
         </a>
         <!-- Nav Icon -->
         <a href="" class="btn"><i class='bx bxl-twitter'></i></a>
@@ -26,10 +26,9 @@
         <div class="posts-list">
             <p>Leer mas posts</p>
             <ul>
-                <li><a href="">FLISoL: Festival Latinoamericano de Software Libre</a></li>
-                <li><a href="">FLISoL: Festival Latinoamericano de Software Libre</a></li>
-                <li><a href="">FLISoL: Festival Latinoamericano de Software Libre</a></li>
-                <li><a href="">FLISoL: Festival Latinoamericano de Software Libre</a></li>
+                <?php foreach($posts as $articulo): ?>
+                <li><a href=""><?php echo $articulo['title'] ?></a></li>
+                <?php endforeach; ?>
             </ul>
         </div>
     </div>  

@@ -34,8 +34,20 @@
     </div>  
 </section>
 
+
+
+
+
+
+
+
+
 <section class="pagination container">
-    <a class="left deactivate" href=""><i class='bx bx-chevrons-left'></i></a>
+    <?php if(paginaActual() === 1): ?>
+        <a class="left deactivate" href=""><i class=' bx bx-chevrons-left'></i></a>
+    <?php else: ?>
+        <a class="left deactivate" href=""><i class='bx bx-chevrons-left'></i></a>    
+    <?php endif; ?>
     <ul>
         <li><a href="">1</a></li>
         <li><a class="active" href="">2</a></li>

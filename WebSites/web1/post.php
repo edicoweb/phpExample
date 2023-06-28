@@ -21,4 +21,6 @@ if (!$post) {
 }
 $post = $post[0];
 
+$posts = obtenerArticulos($conexion);
+
 require "views/post.view.php";

@@ -7,6 +7,6 @@
     <link rel="stylesheet" href="css/ipad.css" media="(max-width: 900px)">
     <link rel="stylesheet" href="css/iphone.css" media="(max-width: 700px)">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="assets/favicon/fav-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="css/assets/favicon/fav-icon.png" type="image/x-icon">
     <title>vianca</title>
 </head>

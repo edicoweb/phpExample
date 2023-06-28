@@ -18,7 +18,7 @@
                 <span style="--i:3;"></span>
             </div>           
         </div>
-        <img src="assets/img/img2.png" alt="">
+        <img src="css/assets/img/img2.png" alt="">
     </section>
     <!-- Services section -->
     <section class="services container" id="services">
@@ -29,7 +29,7 @@
         <div class="services-content">
             <!-- Box-1 -->
             <div href="" class="box box-1">
-                <img src="assets/icon/squares-toys.svg" alt="">
+                <img src="css/assets/icon/squares-toys.svg" alt="">
 
                 <div class="box-text">
                     <div class="title-services">
@@ -46,7 +46,7 @@
             </div>
             <!-- Box-2 -->
             <div href="" class="box box-2">
-                <img src="assets/icon/marketing.svg" alt="">
+                <img src="css/assets/icon/marketing.svg" alt="">
 
                 <div class="box-text">
                     <div class="title-services">
@@ -63,7 +63,7 @@
             </div>
             <!-- Box-3 -->
             <div href="" class="box box-3">
-                <img src="assets/icon/palette-color.svg" alt="">
+                <img src="css/assets/icon/palette-color.svg" alt="">
 
                 <div class="box-text">
                     <div class="title-services">
@@ -84,7 +84,7 @@
     <!-- About Section -->
     <section class="about container" id="about">
         <div class="about-img">
-            <img src="./assets/img/about-group.svg" alt="">
+            <img src="css/assets/img/about-group.svg" alt="">
         </div>
         <div class="about-text">
             <h2>¿Quiénes Somos?</h2>
@@ -127,7 +127,7 @@
     <section class="newsletter">
         <div class="newsletter-content container">
             <div class="newsletter-img">
-            <img src="assets/img/newsletter.png" alt="">
+            <img src="css/assets/img/newsletter.png" alt="">
             </div>
             <div class="newsletter-text">
                 <h2>¿Tu marca necesita algo, pero aún no sabes qué?</h2>
