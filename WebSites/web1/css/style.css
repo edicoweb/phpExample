@@ -44,6 +44,7 @@ header {
 
 header.shadow {
     background-color: var(--bg-color);
+    opacity: 0.9;
     box-shadow: 1px 4px 8px rgb(15 54 55 / 10%);
 }
 

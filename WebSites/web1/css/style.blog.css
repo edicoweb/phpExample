@@ -124,8 +124,10 @@
     color: var(--text-color);
 }
 
-.pagination .deactivate i {
+.pagination .desactivate{
     color: #b4b2b2;
+    cursor: not-allowed;
+    margin: 0 0.5rem; 
 }
 
 .pagination ul {
@@ -144,6 +146,7 @@
 .pagination ul li .active {
     background: var(--main-color);
     color: var(--bg-color);
+    border-radius: 50%;
 }
 
 .pagination ul li .active:hover {

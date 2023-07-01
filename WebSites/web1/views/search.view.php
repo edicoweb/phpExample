@@ -13,7 +13,6 @@
             <input type="text" name="search" placeholder="Buscar Post">
         </form> 
     </div>
-
      <img src="assets/img/img2.png" alt="">
 </section>
 
@@ -24,7 +23,7 @@
     </div>
     <div class="posts-content">
         <!-- Box-1 -->
-        <?php foreach ($posts as $post): ?>
+        <?php foreach ($resultado as $post): ?>
         <div class="box-blog">
             <img src="../imagesPrueba/<?= $post['img'] ?>" alt="Portada del Post">
             <a class="box-blog_title" href=""><?= $post['title'] ?></a>
