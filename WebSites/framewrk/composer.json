@@ -1,0 +1,20 @@
+{
+    "name": "edicoweb/vianca",
+    "description": "proyecto basico",
+    "autoload": {
+        "psr-4": {
+            "Edicoweb\\Vianca\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "edicoweb",
+            "email": "soyedicoweb@gmail.com"
+        }
+    ],
+    "require": {},
+
+    "files": [
+        "app/helpers.php"    
+    ]
+}
